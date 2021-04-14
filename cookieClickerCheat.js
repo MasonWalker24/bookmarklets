@@ -2,6 +2,7 @@ javascript:
 var button = document.createElement("BUTTON");
 var button2 = document.createElement("BUTTON");
 var button3 = document.createElement("BUTTON");
+var button4 = document.createElement("BUTTON");
 button.style.position = "fixed";
 button.style.width = "10%";
 button.style.height = "15%";
@@ -30,6 +31,8 @@ button2.innerHTML = "Turn Off";
 button2.addEventListener('click', function() {
     button.remove();
     button2.remove();
+    button3.remove();
+    button4.remove();
 }, false);
 button3.style.position = "fixed";
 button3.style.width = "10%";

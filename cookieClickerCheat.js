@@ -1,6 +1,7 @@
 javascript:
 var button = document.createElement("BUTTON");
 var button2 = document.createElement("BUTTON");
+var button3 = document.createElement("BUTTON");
 button.style.position = "fixed";
 button.style.width = "10%";
 button.style.height = "15%";
@@ -21,7 +22,7 @@ button2.style.width = "10%";
 button2.style.height = "15%";
 button2.style.backgroundColor = "white";
 button2.style.border = "2px solid black";
-button2.style.top = "70%";
+button2.style.top = "55%";
 button2.style.left = "90%";
 button2.style.zIndex = "100";
 button2.style.fontSize = "1.8vw";
@@ -29,6 +30,21 @@ button2.innerHTML = "Turn Off";
 button2.addEventListener('click', function() {
     button.remove();
     button2.remove();
+}, false);
+button3.style.position = "fixed";
+button3.style.width = "10%";
+button3.style.height = "15%";
+button3.style.backgroundColor = "white";
+button3.style.border = "2px solid black";
+button3.style.top = "70%";
+button3.style.left = "90%";
+button3.style.zIndex = "100";
+button3.style.fontSize = "1.8vw";
+button3.innerHTML = "Change cps";
+button3.addEventListener('click', function() {
+ var amount2 = prompt("What CPS do you want?");
+amount = parseInt(amount2);
+Game.cookiesPs = amount2;
 }, false);
 document.body.appendChild(button);
 document.body.appendChild(button2);

@@ -48,3 +48,4 @@ Game.cookiesPs = amount2;
 }, false);
 document.body.appendChild(button);
 document.body.appendChild(button2);
+document.body.appendChild(button3);

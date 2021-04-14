@@ -1,6 +1,4 @@
 javascript:
-var body = document.body;
-for(int i = 1; i > 0; i++)
-{
- body.click(); 
-}
+var amount = prompt("how many cookies do you want");
+Game.cookies = amount;
+location.reload();

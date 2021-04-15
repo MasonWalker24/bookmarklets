@@ -103,11 +103,18 @@ for (const image of images) {
     image.addEventListener("mouseout", unLightUp2, false);
 }
 
-function lightUp2(event) {
-  event.target.style.boxShadow = "0px 0px 15px blue";
+function lightUp2(event2) {
+  event2.target.style.boxShadow = "0px 0px 15px blue";
 }
-function unLightUp2(event)
+function unLightUp2(event2)
 {
- event.target.style.boxShadow = "0px 0px 0px";   
+ event2.target.style.boxShadow = "0px 0px 0px";   
 }
 
+//add all div elements
+
+const divs = document.getElementsByTagName("div");
+for (const div of divs) {
+    div.addEventListener("mouseover", lightUp2, false);
+    div.addEventListener("mouseout", unLightUp2, false);
+}

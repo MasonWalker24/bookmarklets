@@ -4,6 +4,7 @@ int i = 0;
 for(i <= h1length)
 {
  h1[i].style.color = "blue";
+ i++;
 }
 
 

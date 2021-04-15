@@ -78,3 +78,36 @@ function unLightUp(event)
 }
 
 
+//add all A elements
+
+const links = document.getElementsByTagName("a");
+for (const link of links) {
+    link.addEventListener("mouseover", lightUp, false);
+    link.addEventListener("mouseout", unLightUp, false);
+}
+
+function lightUp(event) {
+  event.target.style.textShadow = "2px 2px 5px blue";
+}
+function unLightUp(event)
+{
+ event.target.style.textShadow = "0px 0px 0px";   
+}
+
+
+//add all img elements
+
+const images = document.getElementsByTagName("img");
+for (const image of images) {
+    image.addEventListener("mouseover", lightUp, false);
+    image.addEventListener("mouseout", unLightUp, false);
+}
+
+function lightUp(event) {
+  event.target.style.textShadow = "2px 2px 5px blue";
+}
+function unLightUp(event)
+{
+ event.target.style.textShadow = "0px 0px 0px";   
+}
+

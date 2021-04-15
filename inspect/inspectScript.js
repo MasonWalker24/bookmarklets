@@ -28,3 +28,53 @@ function unLightUp(event)
 {
  event.target.style.textShadow = "0px 0px 0px";   
 }
+
+//add all h3 elements
+
+const headlines3 = document.getElementsByTagName("h3");
+for (const headline3 of headlines3) {
+    headline3.addEventListener("mouseover", lightUp, false);
+    headline3.addEventListener("mouseout", unLightUp, false);
+}
+
+function lightUp(event) {
+  event.target.style.textShadow = "2px 2px 5px blue";
+}
+function unLightUp(event)
+{
+ event.target.style.textShadow = "0px 0px 0px";   
+}
+
+//add all h4 elements
+
+const headlines4 = document.getElementsByTagName("h4");
+for (const headline4 of headlines4) {
+    headline4.addEventListener("mouseover", lightUp, false);
+    headline4.addEventListener("mouseout", unLightUp, false);
+}
+
+function lightUp(event) {
+  event.target.style.textShadow = "2px 2px 5px blue";
+}
+function unLightUp(event)
+{
+ event.target.style.textShadow = "0px 0px 0px";   
+}
+
+//add all P elements
+
+const paragraphs = document.getElementsByTagName("p");
+for (const paragraph of paragraphs) {
+    paragraph.addEventListener("mouseover", lightUp, false);
+    paragraph.addEventListener("mouseout", unLightUp, false);
+}
+
+function lightUp(event) {
+  event.target.style.textShadow = "2px 2px 5px blue";
+}
+function unLightUp(event)
+{
+ event.target.style.textShadow = "0px 0px 0px";   
+}
+
+

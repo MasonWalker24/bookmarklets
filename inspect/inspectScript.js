@@ -69,3 +69,8 @@ for (const div of divs) {
     div.addEventListener("mouseover", lightUp, false);
     div.addEventListener("mouseout", unLightUp, false);
 }
+
+
+// the start of all the rest of the tag changing and getting.
+
+

@@ -104,10 +104,10 @@ for (const image of images) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.boxShadow = "2px 2px 5px blue";
 }
 function unLightUp(event)
 {
- event.target.style.textShadow = "0px 0px 0px";   
+ event.target.style.boxShadow = "0px 0px 0px";   
 }
 

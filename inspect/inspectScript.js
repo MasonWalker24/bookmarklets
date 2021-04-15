@@ -99,14 +99,14 @@ function unLightUp(event)
 
 const images = document.getElementsByTagName("img");
 for (const image of images) {
-    image.addEventListener("mouseover", lightUp, false);
-    image.addEventListener("mouseout", unLightUp, false);
+    image.addEventListener("mouseover", lightUp2, false);
+    image.addEventListener("mouseout", unLightUp2, false);
 }
 
-function lightUp(event) {
+function lightUp2(event) {
   event.target.style.boxShadow = "0px 0px 15px blue";
 }
-function unLightUp(event)
+function unLightUp2(event)
 {
  event.target.style.boxShadow = "0px 0px 0px";   
 }

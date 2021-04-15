@@ -6,11 +6,11 @@ for (const headline of headlines) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "0px 0px 5px blue";
+  event.target.style.boxShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
- event.target.style.textShadow = "0px 0px 0px";   
+ event.target.style.boxShadow = "0px 0px 0px";   
 }
 
 //add all h2 elements
@@ -20,29 +20,12 @@ for (const headline2 of headlines2) {
     headline2.addEventListener("mouseover", lightUp, false);
     headline2.addEventListener("mouseout", unLightUp, false);
 }
-
-function lightUp(event) {
-  event.target.style.textShadow = "0px 0px 5px blue";
-}
-function unLightUp(event)
-{
- event.target.style.textShadow = "0px 0px 0px";   
-}
-
 //add all h3 elements
 
 const headlines3 = document.getElementsByTagName("h3");
 for (const headline3 of headlines3) {
     headline3.addEventListener("mouseover", lightUp, false);
     headline3.addEventListener("mouseout", unLightUp, false);
-}
-
-function lightUp(event) {
-  event.target.style.textShadow = "0px 0px 5px blue";
-}
-function unLightUp(event)
-{
- event.target.style.textShadow = "0px 0px 0px";   
 }
 
 //add all h4 elements
@@ -53,13 +36,6 @@ for (const headline4 of headlines4) {
     headline4.addEventListener("mouseout", unLightUp, false);
 }
 
-function lightUp(event) {
-  event.target.style.textShadow = "0px 0px 5px blue";
-}
-function unLightUp(event)
-{
- event.target.style.textShadow = "0px 0px 0px";   
-}
 
 //add all P elements
 
@@ -69,15 +45,6 @@ for (const paragraph of paragraphs) {
     paragraph.addEventListener("mouseout", unLightUp, false);
 }
 
-function lightUp(event) {
-  event.target.style.textShadow = "0px 0px 5px blue";
-}
-function unLightUp(event)
-{
- event.target.style.textShadow = "0px 0px 0px";   
-}
-
-
 //add all A elements
 
 const links = document.getElementsByTagName("a");
@@ -86,35 +53,19 @@ for (const link of links) {
     link.addEventListener("mouseout", unLightUp, false);
 }
 
-function lightUp(event) {
-  event.target.style.textShadow = "0px 0px 5px blue";
-}
-function unLightUp(event)
-{
- event.target.style.textShadow = "0px 0px 0px";   
-}
-
 
 //add all img elements
 
 const images = document.getElementsByTagName("img");
 for (const image of images) {
-    image.addEventListener("mouseover", lightUp2, false);
-    image.addEventListener("mouseout", unLightUp2, false);
-}
-
-function lightUp2(event2) {
-  event2.target.style.boxShadow = "0px 0px 15px blue";
-}
-function unLightUp2(event2)
-{
- event2.target.style.boxShadow = "0px 0px 0px";   
+    image.addEventListener("mouseover", lightUp, false);
+    image.addEventListener("mouseout", unLightUp, false);
 }
 
 //add all div elements
 
 const divs = document.getElementsByTagName("div");
 for (const div of divs) {
-    div.addEventListener("mouseover", lightUp2, false);
-    div.addEventListener("mouseout", unLightUp2, false);
+    div.addEventListener("mouseover", lightUp, false);
+    div.addEventListener("mouseout", unLightUp, false);
 }

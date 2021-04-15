@@ -6,7 +6,7 @@ for (const headline of headlines) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.textShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
@@ -22,7 +22,7 @@ for (const headline2 of headlines2) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.textShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
@@ -38,7 +38,7 @@ for (const headline3 of headlines3) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.textShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
@@ -54,7 +54,7 @@ for (const headline4 of headlines4) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.textShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
@@ -70,7 +70,7 @@ for (const paragraph of paragraphs) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.textShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
@@ -87,7 +87,7 @@ for (const link of links) {
 }
 
 function lightUp(event) {
-  event.target.style.textShadow = "2px 2px 5px blue";
+  event.target.style.textShadow = "0px 0px 5px blue";
 }
 function unLightUp(event)
 {
@@ -104,7 +104,7 @@ for (const image of images) {
 }
 
 function lightUp(event) {
-  event.target.style.boxShadow = "2px 2px 5px blue";
+  event.target.style.boxShadow = "0px 0px 15px blue";
 }
 function unLightUp(event)
 {

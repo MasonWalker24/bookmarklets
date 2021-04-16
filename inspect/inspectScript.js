@@ -1,14 +1,14 @@
 var button = document.createElement("BUTTON");
 var container = document.createElement("DIV");
 var input = document.createElement("DIV");
-input.style.position = "absolute";
-input.style.width = "80%";
-inputAtt = document.createAttribute("contenteditable");
-inputAtt.value = "true";
-input.setAttributeNode(inputAtt);
-input.style.height = "30%"
-input.style.top = "60%";
-input.style.left = "5%";
+//input.style.position = "absolute";
+//input.style.width = "80%";
+//inputAtt = document.createAttribute("contenteditable");
+//inputAtt.value = "true";
+//input.setAttributeNode(inputAtt);
+//input.style.height = "30%"
+//input.style.top = "60%";
+//input.style.left = "5%";
 
 
 

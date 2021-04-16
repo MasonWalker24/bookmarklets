@@ -1,12 +1,12 @@
 var button = document.createElement("BUTTON");
 var container = document.createElement("DIV");
-var input = document.createElement("DIV");
+var input = document.createElement("H2");
 input.style.position = "absolute";
 input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
 inputAtt.value = "true";
 input.setAttributeNode(inputAtt);
-input.style.height = "30%"
+input.style.height = "10%"
 input.style.top = "65%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
@@ -116,7 +116,7 @@ function clickh1(event)
     h1 = event.target;
     var h1text = h1.innerHTML;
     var h1class = h1.getElement("class");
-    input.innerHTML = '<h1 class="' + h1class + '"' + '>' + h1text + '</h1>';
+    input.innerHTML = "test";
 }
 function seth1()
 {

@@ -10,6 +10,14 @@ input.style.height = "30%"
 input.style.top = "60%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
+container.style.width = "100%";
+container.style.height = "40%";
+container.style.position = "absolute";
+container.style.top = "60%";
+container.style.backgroundColor = "blue"
+container.style.opacity = ".7";
+container.style.zIndex = "100";
+input.style.zIndex = "101";
 
 
 

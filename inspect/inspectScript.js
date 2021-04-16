@@ -105,6 +105,7 @@ for (const div of divs) {
 
 // the start of all the rest of the tag changing and getting.
 var h1;
+var h1parent;
 function clickh1(event)
 {
     document.body.appendChild(button);
@@ -113,6 +114,9 @@ function clickh1(event)
     h1parent = event.target.parentElement;
     button.addEventListener("click", seth1, false);
     h1 = event.target;
+    var h1text = h1.innerHTML;
+    var h1class = h1.getElement("class");
+    input.innerHTML = '<h1 class="' + h1class + '"' + ">" + h1text + "</h1>";
 }
 function seth1()
 {

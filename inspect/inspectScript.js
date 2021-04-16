@@ -101,6 +101,6 @@ function clickh1(event)
     document.body.appendChild(button);
     document.body.appendChild(input);
     document.body.appendChild(container);
-    //h1parent = event.target.parentElement;
+    h1parent = event.target.parentElement;
 }
 

@@ -108,7 +108,7 @@ var h1;
 var h1parent;
 function clickh1(event)
 {
-    //var h1parent = event.target.parentElement;
+    var h1parent = event.target.parentElement;
     //button.addEventListener("click", seth1, false);
     //var h1 = event.target;
     //var h1text = h1.innerHTML;

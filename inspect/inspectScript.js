@@ -1,4 +1,5 @@
 var button = document.createElement("BUTTON");
+var isConsole = "false";
 var button2 = document.createElement("BUTTON");
 var container = document.createElement("DIV");
 var input = document.createElement("H2");
@@ -51,8 +52,18 @@ document.body.appendChild(console);
 
 function openConsole()
 {
+    if(isConsole == "false")
+    {
     console.style.display = "block";
-    button
+    button2.innerHTML = "Close Console";
+        isConsole = "true";
+    } else
+    {
+        console.style.display = "none";
+        console.innerHTML = "";
+        button2.innerHTML = "Open Console";
+        isConsole = "false";
+    }
 }
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");

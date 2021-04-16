@@ -5,7 +5,7 @@ input.style.position = "absolute";
 input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
 inputAtt.value = "true";
-input.appendAttribute(inputAtt);
+input.setAttributeNode(inputAtt);
 input.style.height = "30%"
 input.style.top = "60%";
 input.style.left = "5%";

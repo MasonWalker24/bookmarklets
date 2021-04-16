@@ -99,5 +99,6 @@ function clickh1()
 {
     document.body.appendChild(button);
     document.body.appendChild(input);
+    document.body.appendChild(container);
 }
 

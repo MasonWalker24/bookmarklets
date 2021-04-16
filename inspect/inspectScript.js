@@ -9,6 +9,7 @@ input.setAttributeNode(inputAtt);
 input.style.height = "30%"
 input.style.top = "60%";
 input.style.left = "5%";
+input.style.border = "2px solid black";
 
 
 
@@ -95,10 +96,11 @@ for (const div of divs) {
 
 // the start of all the rest of the tag changing and getting.
 
-function clickh1()
+function clickh1(event)
 {
     document.body.appendChild(button);
     document.body.appendChild(input);
     document.body.appendChild(container);
+    h1parent = event.target.parentElement;
 }
 

@@ -116,7 +116,7 @@ function clickh1(event)
     h1 = event.target;
     var h1text = h1.innerHTML;
     var h1class = h1.getElement("class");
-    input.innerHTML = '<h1 class="' + h1class + '"' + ">" + h1text + "</h1>";
+    input.value = '<h1 class="' + h1class + '"' + ">" + h1text + "</h1>";
 }
 function seth1()
 {

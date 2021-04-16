@@ -110,7 +110,7 @@ function clickh1(event)
 {
     var h1parent = event.target.parentElement;
     button.addEventListener("click", seth1, false);
-    //var h1 = event.target;
+    var h1 = event.target;
     //var h1text = h1.innerHTML;
     //var h1class = h1.getElement("class");
     //input.innerHTML = '&60;h1 class="' + h1class + '"' + '&62;' + h1text + '&60;/h1&62';

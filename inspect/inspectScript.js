@@ -4,6 +4,8 @@ var input = document.createElement("H2");
 input.style.position = "absolute";
 input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
+inputAtt.value = "true";
+input.setAttributeNode(inputAtt);
 input.style.height = "7%"
 input.style.top = "65%";
 input.style.left = "5%";
@@ -107,7 +109,6 @@ var h1parent;
 function clickh1(event)
 {
     document.body.appendChild(button);
-    document.body.appendChild(input);
     document.body.appendChild(container);
     h1parent = event.target.parentElement;
     button.addEventListener("click", seth1, false);
@@ -115,8 +116,7 @@ function clickh1(event)
     var h1text = h1.innerHTML;
     var h1class = h1.getElement("class");
     input.innerHTML = "test";
-    inputAtt.value = "true";
-input.setAttributeNode(inputAtt);
+    document.body.appendChild(input);
 }
 function seth1()
 {
@@ -125,7 +125,5 @@ function seth1()
     button.remove();
     container.remove();
     input.remove();
-    inputAtt.value = "false";
-input.setAttributeNode(inputAtt);
 }
 

@@ -108,6 +108,7 @@ var h1;
 var h1parent;
 function clickh1(event)
 {
+    document.body.appendChild(input);
     document.body.appendChild(button);
     document.body.appendChild(container);
     h1parent = event.target.parentElement;
@@ -116,7 +117,6 @@ function clickh1(event)
     var h1text = h1.innerHTML;
     var h1class = h1.getElement("class");
     input.innerHTML = "test";
-    document.body.appendChild(input);
 }
 function seth1()
 {

@@ -34,7 +34,7 @@ const headlines2 = document.getElementsByTagName("h2");
 for (const headline2 of headlines2) {
     headline2.addEventListener("mouseover", lightUp, false);
     headline2.addEventListener("mouseout", unLightUp, false);
-    headline2.addEventListenrer("click", clickh2, false);
+   // headline2.addEventListenrer("click", clickh2, false);
 }
 //add all h3 elements
 
@@ -42,7 +42,7 @@ const headlines3 = document.getElementsByTagName("h3");
 for (const headline3 of headlines3) {
     headline3.addEventListener("mouseover", lightUp, false);
     headline3.addEventListener("mouseout", unLightUp, false);
-    headline3.addEventListener("click", clickh3, false);
+    //headline3.addEventListener("click", clickh3, false);
 }
 
 //add all h4 elements
@@ -51,7 +51,7 @@ const headlines4 = document.getElementsByTagName("h4");
 for (const headline4 of headlines4) {
     headline4.addEventListener("mouseover", lightUp, false);
     headline4.addEventListener("mouseout", unLightUp, false);
-    headline4.addEventListenr("click", clickh4, false);
+   // headline4.addEventListenr("click", clickh4, false);
 }
 
 
@@ -61,7 +61,7 @@ const paragraphs = document.getElementsByTagName("p");
 for (const paragraph of paragraphs) {
     paragraph.addEventListener("mouseover", lightUp, false);
     paragraph.addEventListener("mouseout", unLightUp, false);
-    paragraph.addEventListener("click", clickp, false);
+   // paragraph.addEventListener("click", clickp, false);
 }
 
 //add all A elements
@@ -70,7 +70,7 @@ const links = document.getElementsByTagName("a");
 for (const link of links) {
     link.addEventListener("mouseover", lightUp, false);
     link.addEventListener("mouseout", unLightUp, false);
-    link.addEventListener("click", clicka, false);
+    //link.addEventListener("click", clicka, false);
 }
 
 
@@ -80,7 +80,7 @@ const images = document.getElementsByTagName("img");
 for (const image of images) {
     image.addEventListener("mouseover", lightUp, false);
     image.addEventListener("mouseout", unLightUp, false);
-    image.addEventListener("click", clickimg, false);
+   // image.addEventListener("click", clickimg, false);
 }
 
 //add all div elements
@@ -89,7 +89,7 @@ const divs = document.getElementsByTagName("div");
 for (const div of divs) {
     div.addEventListener("mouseover", lightUp, false);
     div.addEventListener("mouseout", unLightUp, false);
-    div.addEventListener("click", clickdiv, false);
+    //div.addEventListener("click", clickdiv, false);
 }
 
 

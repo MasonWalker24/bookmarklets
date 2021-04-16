@@ -119,5 +119,7 @@ function seth1()
     var h1text = input.textContent;
     h1.innerHTML = h1text;
     button.remove();
+    container.remove();
+    input.remove();
 }
 

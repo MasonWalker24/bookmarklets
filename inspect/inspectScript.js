@@ -1,6 +1,8 @@
 var button = document.createElement("BUTTON");
+var button2 = document.createElement("BUTTON");
 var container = document.createElement("DIV");
 var input = document.createElement("H2");
+var console = document.createElement("H2");
 input.style.position = "absolute";
 input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
@@ -12,16 +14,40 @@ input.style.left = "5%";
 input.style.border = "2px solid black";
 container.style.width = "100%";
 container.style.height = "40%";
-container.style.position = "absolute";
+container.style.position = "fixed";
 container.style.top = "60%";
 container.style.backgroundColor = "blue"
 container.style.opacity = ".7";
 container.style.zIndex = "100";
 input.style.zIndex = "101";
 container.style.left = "0";
+button2.style.position = "fixed";
+button2.style.width = "10%";
+button2.style.height = "12%";
+button2.style.left = "90%";
+button2.style.border = "2px solid black";
+button2.style.background = "white";
+button2.style.fontSize = "1.7vw";
+button2.style.zIndex = "200";
+button2.addEventListener("click", openConsole, false);
+console.style.position = "fixed";
+console.style.background = "white";
+console.style.border = "2px solid black";
+console.style.width = "80%";
+console.style.height = "10%";
+console.style.top = "75%";
+console.style.left = "5%";
+console.style.display = "none";
+document.body.appendChild(button2);
+document.body.appendChild(console);
 
 
+//console functions and variables
 
+function openConsole()
+{
+    console.style.display = "block";
+}
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {

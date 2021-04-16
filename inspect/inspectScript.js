@@ -17,7 +17,7 @@ const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
     headline.addEventListener("mouseover", lightUp, false);
     headline.addEventListener("mouseout", unLightUp, false);
-    headline.addEventListener("click" clickh1, false);
+   // headline.addEventListener("click" clickh1, false);
 }
 
 function lightUp(event) {

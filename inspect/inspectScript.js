@@ -38,8 +38,12 @@ console.style.height = "10%";
 console.style.top = "75%";
 console.style.left = "5%";
 console.style.display = "none";
+var consoleAtt = document.createAttribute("contenteditable");
+consoleAtt.value = "true";
+console.setAttributeNode(consoleAtt);
 document.body.appendChild(button2);
 document.body.appendChild(console);
+
 
 
 //console functions and variables

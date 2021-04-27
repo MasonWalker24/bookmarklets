@@ -158,7 +158,7 @@ function clickh1(event)
     //var h1text = h1.innerHTML;
     h1parent.replaceChild(newparent, h1);
     newparent.appendChild(h1);
-    h1value = newparent.innerHTML;
+    h1value = newparent.innerText;
     input.innerHTML = h1value;
     document.body.appendChild(input);
     document.body.appendChild(button);

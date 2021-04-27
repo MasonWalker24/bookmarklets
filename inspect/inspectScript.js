@@ -169,6 +169,7 @@ function seth1()
     h1.innerHTML = h1settext;
     button.remove();
     container.remove();
+    input.innerHTML = "";
     input.remove();
 }
 

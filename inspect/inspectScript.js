@@ -171,6 +171,7 @@ function seth1()
 {
     //alert("test");
     var h1settext = input.textContent;
+    h1settext.replace('style="box-shadow: blue 0px 0px 5px;"', "");
     newparent.innerHTML = h1settext;
     button.remove();
     container.remove();

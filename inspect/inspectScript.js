@@ -164,10 +164,11 @@ function clickh1(event)
 }
 function seth1()
 {
-    var h1settext = input.textContent;
-    h1.innerHTML = h1settext;
-    button.remove();
-    container.remove();
-    input.remove();
+    alert("test");
+    //var h1settext = input.textContent;
+    //h1.innerHTML = h1settext;
+    //button.remove();
+    //container.remove();
+    //input.remove();
 }
 

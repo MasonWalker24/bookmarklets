@@ -161,7 +161,7 @@ function clickh1(event)
     newparent.appendChild(h1);
     h1value = newparent.innerHTML;
     h1value.toString();
-    h1value.replace("<", "m");
+    h1value.replace(/</gi, "m");
     input.innerText = h1value;
     document.body.appendChild(input);
     document.body.appendChild(button);

@@ -155,7 +155,7 @@ function clickh1(event)
     var newparent = document.createElement("DIV");
     var h1 = event.target;
     var h1text = h1.innerHTML;
-    h1parent.replaceChild(h1, newparent);
+    h1parent.replaceChild(newparent, h1);
     newparent.appendChild(h1);
     //var h1class = h1.getElement("class");
     document.body.appendChild(input);

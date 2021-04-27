@@ -151,11 +151,12 @@ var h1;
 var h1parent;
 function clickh1(event)
 {
-    var h1parent = event.target.parentElement;
+    var h1parent = event.target.parentNode;
     var newparent = document.createElement("DIV");
     var h1 = event.target;
     var h1text = h1.innerHTML;
     h1parent.replaceChild(h1, newparent);
+    newparent.appendChild(h1);
     //var h1class = h1.getElement("class");
     document.body.appendChild(input);
     document.body.appendChild(button);

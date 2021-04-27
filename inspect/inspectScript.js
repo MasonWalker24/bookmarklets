@@ -153,7 +153,7 @@ function clickh1(event)
 {
     var h1parent = event.target.parentNode;
     var newparent = document.createElement("DIV");
-    var h1 = event.target;
+    h1 = event.target;
     //var h1text = h1.innerHTML;
     h1parent.replaceChild(newparent, h1);
     newparent.appendChild(h1);
@@ -165,10 +165,10 @@ function clickh1(event)
 function seth1()
 {
     alert("test");
-    //var h1settext = input.textContent;
-    //h1.innerHTML = h1settext;
-    //button.remove();
-    //container.remove();
-    //input.remove();
+    var h1settext = input.textContent;
+    h1.innerHTML = h1settext;
+    button.remove();
+    container.remove();
+    input.remove();
 }
 

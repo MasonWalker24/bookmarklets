@@ -150,10 +150,11 @@ for (const div of divs) {
 var h1;
 var h1parent;
 var h1value;
+var newparent;
 function clickh1(event)
 {
     var h1parent = event.target.parentNode;
-    var newparent = document.createElement("DIV");
+    newparent = document.createElement("DIV");
     h1 = event.target;
     //var h1text = h1.innerHTML;
     h1parent.replaceChild(newparent, h1);
@@ -170,7 +171,7 @@ function seth1()
 {
     //alert("test");
     var h1settext = input.textContent;
-    h1.innerHTML = h1settext;
+    newparent.innerHTML = h1settext;
     button.remove();
     container.remove();
     input.innerHTML = "";

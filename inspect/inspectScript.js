@@ -164,7 +164,7 @@ function clickh1(event)
 }
 function seth1()
 {
-    alert("test");
+    //alert("test");
     var h1settext = input.textContent;
     h1.innerHTML = h1settext;
     button.remove();

@@ -289,7 +289,7 @@ function clickimg(event)
     imgparent.replaceChild(newparentimg, img);
     newparentimg.appendChild(img);
     imgvalue = newparentimg.innerHTML;
-    imgvalue = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    imgvalue = imgvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     imgvalue = imgvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = imgvalue;
     document.body.appendChild(input);

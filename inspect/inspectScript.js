@@ -178,5 +178,8 @@ function seth1()
     container.remove();
     input.innerHTML = "";
     input.remove();
+    h1.addEventListener("mouseover", lightUp, false);
+    h1.addEventListener("mouseout", unLightUp, false);
+    h1.addEventListener("click", clickh1, false);
 }
 

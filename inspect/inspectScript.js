@@ -7,13 +7,13 @@ var console = document.createElement("H2");
 
 button.style.position = "fixed";
 button.style.width = "10%";
-button.style.height = "12%";
-button.style.left = "90%";
+button.style.height = "7%";
+button.style.left = "88%";
 button.style.border = "2px solid black";
 button.style.background = "white";
 button.style.fontSize = "1.7vw";
 button.style.zIndex = "200";
-button.style.top = "82%";
+button.style.top = "83.5%";
 
 input.style.position = "fixed";
 input.style.width = "80%";

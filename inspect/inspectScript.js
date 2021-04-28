@@ -205,7 +205,7 @@ var h2;
 var h2parent;
 var h2value;
 var newparen2;
-function clickh1(event)
+function clickh2(event)
 {
     var h2parent = event.target.parentNode;
     newparent2 = document.createElement("DIV");

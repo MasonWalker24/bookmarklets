@@ -188,6 +188,9 @@ function seth1()
     //alert("test");
     var h1settext = input.textContent;
     newparent.innerHTML = h1settext;
+    h1.addEventListener("mouseover", lightUp, false);
+    h1.addEventListener("mouseout", unLightUp, false);
+    h1.addEventListener("click", clickh1, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

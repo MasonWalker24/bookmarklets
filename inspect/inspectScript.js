@@ -21,16 +21,16 @@ inputAtt = document.createAttribute("contenteditable");
 inputAtt.value = "true";
 input.setAttributeNode(inputAtt);
 input.style.height = "7%"
-input.style.top = "65%";
+input.style.top = "86.5%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
 input.style.zIndex = "101";
 input.style.color = "white";
 
 container.style.width = "100%";
-container.style.height = "40%";
+container.style.height = "20%";
 container.style.position = "fixed";
-container.style.top = "60%";
+container.style.top = "80%";
 container.style.backgroundColor = "blue"
 container.style.opacity = ".7";
 container.style.zIndex = "100";

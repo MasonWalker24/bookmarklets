@@ -257,7 +257,7 @@ function clickh3(event)
     document.body.appendChild(input);
     document.body.appendChild(button);
     document.body.appendChild(container);
-    button.addEventListener("click", seth2, false);
+    button.addEventListener("click", seth3, false);
 }
 function seth3()
 {

@@ -13,7 +13,7 @@ button.style.border = "2px solid black";
 button.style.background = "white";
 button.style.fontSize = "1.7vw";
 button.style.zIndex = "200";
-button.style.top = "83.5%";
+button.style.top = "86.5%";
 
 input.style.position = "fixed";
 input.style.width = "80%";

@@ -266,7 +266,7 @@ function seth3()
     newparent3.innerHTML = h3settext;
     newparent3.addEventListener("mouseover", lightUp, false);
     newparent3.addEventListener("mouseout", unLightUp, false);
-    newparent3.addEventListener("click", clickh2, false);
+    newparent3.addEventListener("click", clickh3, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

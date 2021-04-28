@@ -175,8 +175,8 @@ function clickh1(event)
     h1parent.replaceChild(newparent, h1);
     newparent.appendChild(h1);
     h1value = newparent.innerHTML;
-    //h1value = h1value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    h1vlaue = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    h1value = h1value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    h1value = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h1value;
     document.body.appendChild(input);
     document.body.appendChild(button);

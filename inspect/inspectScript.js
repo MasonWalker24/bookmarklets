@@ -15,7 +15,7 @@ button.style.fontSize = "1.7vw";
 button.style.zIndex = "200";
 button.style.top = "75%";
 
-input.style.position = "absolute";
+input.style.position = "fixed";
 input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
 inputAtt.value = "true";
@@ -148,7 +148,7 @@ const images = document.getElementsByTagName("img");
 for (const image of images) {
     image.addEventListener("mouseover", lightUp, false);
     image.addEventListener("mouseout", unLightUp, false);
-   // image.addEventListener("click", clickimg, false);
+    image.addEventListener("click", clickimg, false);
 }
 
 //add all div elements
@@ -273,3 +273,39 @@ function seth3()
     input.remove();
 }
 
+// change img elements
+
+var img;
+var imgparent;
+var imgvalue;
+var newparenimg;
+function clickimg(event)
+{
+    var h2parent = event.target.parentNode;
+    newparent2 = document.createElement("DIV");
+    h2 = event.target;
+    //var h1text = h1.innerHTML;
+    h2parent.replaceChild(newparent2, h2);
+    newparent2.appendChild(h2);
+    h2value = newparent2.innerHTML;
+    h2value = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    h2value = h2value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = h2value;
+    document.body.appendChild(input);
+    document.body.appendChild(button);
+    document.body.appendChild(container);
+    button.addEventListener("click", seth2, false);
+}
+function seth2()
+{
+    //alert("test");
+    var h2settext = input.textContent;
+    newparent2.innerHTML = h2settext;
+    newparent2.addEventListener("mouseover", lightUp, false);
+    newparent2.addEventListener("mouseout", unLightUp, false);
+    newparent2.addEventListener("click", clickh2, false);
+    button.remove();
+    container.remove();
+    input.innerHTML = "";
+    input.remove();
+}

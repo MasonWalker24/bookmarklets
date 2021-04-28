@@ -102,7 +102,7 @@ const headlines2 = document.getElementsByTagName("h2");
 for (const headline2 of headlines2) {
     headline2.addEventListener("mouseover", lightUp, false);
     headline2.addEventListener("mouseout", unLightUp, false);
-    headline2.addEventListenrer("click", clickh2, false);
+    headline2.addEventListener("click", clickh2, false);
 }
 //add all h3 elements
 
@@ -201,8 +201,38 @@ function seth1()
 
 //changing h2 elements
 
-function clickh2(event)
+var h2;
+var h2parent;
+var h2value;
+var newparen2;
+function clickh1(event)
 {
-    alert("test");
+    var h2parent = event.target.parentNode;
+    newparent2 = document.createElement("DIV");
+    h2 = event.target;
+    //var h1text = h1.innerHTML;
+    h2parent.replaceChild(newparent2, h2);
+    newparent2.appendChild(h2);
+    h2value = newparent2.innerHTML;
+    h2value = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    h2value = h2value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = h2value;
+    document.body.appendChild(input);
+    document.body.appendChild(button);
+    document.body.appendChild(container);
+    button.addEventListener("click", seth2, false);
+}
+function seth2()
+{
+    //alert("test");
+    var h2settext = input.textContent;
+    newparent2.innerHTML = h1settext;
+    newparent2.addEventListener("mouseover", lightUp, false);
+    newparent2.addEventListener("mouseout", unLightUp, false);
+    newparent2.addEventListener("click", clickh2, false);
+    button.remove();
+    container.remove();
+    input.innerHTML = "";
+    input.remove();
 }
 

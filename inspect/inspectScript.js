@@ -201,35 +201,35 @@ function seth1()
 
 //changing h2 elements
 
-var h2;
-var h2parent;
-var h2value;
-var newparent2;
+var h1;
+var h1parent;
+var h1value;
+var newparent;
 function clickh2(event)
 {
-    var h2parent = event.target.parentNode;
-    newparent2 = document.createElement("DIV");
-    h2 = event.target;
+    var h1parent = event.target.parentNode;
+    newparent = document.createElement("DIV");
+    h1 = event.target;
     //var h1text = h1.innerHTML;
-    h2parent.replaceChild(newparent2, h2);
-    newparent2.appendChild(h2);
-    h2value = newparent2.innerHTML;
-    h2value = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    h2value = h2value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    input.innerText = h2value;
+    h1parent.replaceChild(newparent, h1);
+    newparent.appendChild(h1);
+    h1value = newparent.innerHTML;
+    h1value = h1value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    h1value = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = h1value;
     document.body.appendChild(input);
     document.body.appendChild(button);
     document.body.appendChild(container);
-    button.addEventListener("click", seth2, false);
+    button.addEventListener("click", seth1, false);
 }
-function seth2()
+function seth1()
 {
     //alert("test");
-    var h2settext = input.textContent;
-    newparent2.innerHTML = h2settext;
-    newparent2.addEventListener("mouseover", lightUp, false);
-    newparent2.addEventListener("mouseout", unLightUp, false);
-    newparent2.addEventListener("click", clickh1, false);
+    var h1settext = input.textContent;
+    newparent.innerHTML = h1settext;
+    newparent.addEventListener("mouseover", lightUp, false);
+    newparent.addEventListener("mouseout", unLightUp, false);
+    newparent.addEventListener("click", clickh2, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

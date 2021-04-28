@@ -166,6 +166,7 @@ var h1;
 var h1parent;
 var h1value;
 var newparent;
+var newh1;
 function clickh1(event)
 {
     var h1parent = event.target.parentNode;
@@ -173,7 +174,7 @@ function clickh1(event)
     h1 = event.target;
     //var h1text = h1.innerHTML;
     h1parent.replaceChild(newparent, h1);
-    newparent.appendChild(h1);
+    newh1 = newparent.appendChild(h1);
     h1value = newparent.innerHTML;
     h1value = h1value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     h1value = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
@@ -188,9 +189,9 @@ function seth1()
     //alert("test");
     var h1settext = input.textContent;
     newparent.innerHTML = h1settext;
-    h1.addEventListener("mouseover", lightUp, false);
-    h1.addEventListener("mouseout", unLightUp, false);
-    h1.addEventListener("click", clickh1, false);
+    newh1.addEventListener("mouseover", lightUp, false);
+    newh1.addEventListener("mouseout", unLightUp, false);
+    newh1.addEventListener("click", clickh1, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

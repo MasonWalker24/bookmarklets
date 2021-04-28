@@ -130,7 +130,7 @@ const paragraphs = document.getElementsByTagName("p");
 for (const paragraph of paragraphs) {
     paragraph.addEventListener("mouseover", lightUp, false);
     paragraph.addEventListener("mouseout", unLightUp, false);
-   // paragraph.addEventListener("click", clickp, false);
+    paragraph.addEventListener("click", clickp, false);
 }
 
 //add all A elements
@@ -276,35 +276,35 @@ function seth3()
 
 // change img elements
 
-var img;
-var imgparent;
-var imgvalue;
-var newparentimg;
-function clickimg(event)
+var p;
+var pparent;
+var pvalue;
+var newparentp;
+function clickp(event)
 {
-    var imgparent = event.target.parentNode;
-    newparentimg = document.createElement("DIV");
-    img = event.target;
+    var pparent = event.target.parentNode;
+    newparentp = document.createElement("DIV");
+    p = event.target;
     //var h1text = h1.innerHTML;
-    imgparent.replaceChild(newparentimg, img);
-    newparentimg.appendChild(img);
-    imgvalue = newparentimg.innerHTML;
-    imgvalue = imgvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    imgvalue = imgvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    input.innerText = imgvalue;
+    pparent.replaceChild(newparentp, p);
+    newparentp.appendChild(p);
+    pvalue = newparentp.innerHTML;
+    pvalue = pvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    pvalue = pvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = pvalue;
     document.body.appendChild(input);
     document.body.appendChild(button);
     document.body.appendChild(container);
-    button.addEventListener("click", setimg, false);
+    button.addEventListener("click", setp, false);
 }
-function setimg()
+function setp()
 {
     //alert("test");
-    var imgsettext = input.textContent;
-    newparentimg.innerHTML = imgsettext;
-    newparentimg.addEventListener("mouseover", lightUp, false);
-    newparentimg.addEventListener("mouseout", unLightUp, false);
-    newparentimg.addEventListener("click", clickimg, false);
+    var psettext = input.textContent;
+    newparentp.innerHTML = psettext;
+    newparentp.addEventListener("mouseover", lightUp, false);
+    newparentp.addEventListener("mouseout", unLightUp, false);
+    newparentp.addEventListener("click", clickp, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

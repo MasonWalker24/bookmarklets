@@ -25,7 +25,7 @@ input.style.top = "65%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
 input.style.zIndex = "101";
-input.style.color = "white";
+input.style.color = "blue";
 
 container.style.width = "100%";
 container.style.height = "40%";

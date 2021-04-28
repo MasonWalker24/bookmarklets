@@ -226,7 +226,7 @@ function seth2()
 {
     //alert("test");
     var h2settext = input.textContent;
-    newparent2.innerHTML = h1settext;
+    newparent2.innerHTML = h2settext;
     newparent2.addEventListener("mouseover", lightUp, false);
     newparent2.addEventListener("mouseout", unLightUp, false);
     newparent2.addEventListener("click", clickh2, false);

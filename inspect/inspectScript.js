@@ -4,6 +4,17 @@ var button2 = document.createElement("BUTTON");
 var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var console = document.createElement("H2");
+
+button.style.position = "fixed";
+button.style.width = "10%";
+button.style.height = "12%";
+button.style.left = "90%";
+button.style.border = "2px solid black";
+button.style.background = "white";
+button.style.fontSize = "1.7vw";
+button.style.zIndex = "200";
+button.style.top = "75%";
+
 input.style.position = "absolute";
 input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
@@ -13,6 +24,8 @@ input.style.height = "7%"
 input.style.top = "65%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
+input.style.zIndex = "101";
+
 container.style.width = "100%";
 container.style.height = "40%";
 container.style.position = "fixed";
@@ -20,8 +33,8 @@ container.style.top = "60%";
 container.style.backgroundColor = "blue"
 container.style.opacity = ".7";
 container.style.zIndex = "100";
-input.style.zIndex = "101";
 container.style.left = "0";
+
 button2.style.position = "fixed";
 button2.style.width = "10%";
 button2.style.height = "12%";
@@ -31,6 +44,7 @@ button2.style.background = "white";
 button2.style.fontSize = "1.7vw";
 button2.style.zIndex = "200";
 button2.addEventListener("click", openConsole, false);
+
 console.style.position = "fixed";
 console.style.background = "white";
 console.style.border = "2px solid black";
@@ -39,6 +53,7 @@ console.style.height = "10%";
 console.style.top = "75%";
 console.style.left = "5%";
 console.style.display = "none";
+
 button2.innerHTML = "Open Console";
 var consoleAtt = document.createAttribute("contenteditable");
 consoleAtt.value = "true";
@@ -166,8 +181,7 @@ function clickh1(event)
     document.body.appendChild(input);
     document.body.appendChild(button);
     document.body.appendChild(container);
-    
-     button.addEventListener("click", seth1, false);
+    button.addEventListener("click", seth1, false);
 }
 function seth1()
 {
@@ -178,8 +192,5 @@ function seth1()
     container.remove();
     input.innerHTML = "";
     input.remove();
-    h1.addEventListener("mouseover", lightUp, false);
-    h1.addEventListener("mouseout", unLightUp, false);
-    h1.addEventListener("click", clickh1, false);
 }
 

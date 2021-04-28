@@ -102,7 +102,7 @@ const headlines2 = document.getElementsByTagName("h2");
 for (const headline2 of headlines2) {
     headline2.addEventListener("mouseover", lightUp, false);
     headline2.addEventListener("mouseout", unLightUp, false);
-   // headline2.addEventListenrer("click", clickh2, false);
+    headline2.addEventListenrer("click", clickh2, false);
 }
 //add all h3 elements
 

@@ -201,38 +201,8 @@ function seth1()
 
 //changing h2 elements
 
-var h1;
-var h1parent;
-var h1value;
-var newparent;
 function clickh2(event)
 {
-    var h1parent = event.target.parentNode;
-    newparent = document.createElement("DIV");
-    h1 = event.target;
-    //var h1text = h1.innerHTML;
-    h1parent.replaceChild(newparent, h1);
-    newparent.appendChild(h1);
-    h1value = newparent.innerHTML;
-    h1value = h1value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    h1value = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    input.innerText = h1value;
-    document.body.appendChild(input);
-    document.body.appendChild(button);
-    document.body.appendChild(container);
-    button.addEventListener("click", seth1, false);
-}
-function seth1()
-{
-    //alert("test");
-    var h1settext = input.textContent;
-    newparent.innerHTML = h1settext;
-    newparent.addEventListener("mouseover", lightUp, false);
-    newparent.addEventListener("mouseout", unLightUp, false);
-    newparent.addEventListener("click", clickh2, false);
-    button.remove();
-    container.remove();
-    input.innerHTML = "";
-    input.remove();
+    alert("test");
 }
 

@@ -25,12 +25,13 @@ input.style.top = "83.5%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
 input.style.zIndex = "101";
+input.style.color = "white";
 
 container.style.width = "100%";
 container.style.height = "20%";
 container.style.position = "fixed";
 container.style.top = "80%";
-container.style.backgroundColor = "white"
+container.style.backgroundColor = "blue"
 container.style.opacity = ".7";
 container.style.zIndex = "100";
 container.style.left = "0";

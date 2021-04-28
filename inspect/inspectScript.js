@@ -279,32 +279,32 @@ function seth3()
 var img;
 var imgparent;
 var imgvalue;
-var newparenimg;
+var newparentimg;
 function clickimg(event)
 {
-    var h2parent = event.target.parentNode;
-    newparent2 = document.createElement("DIV");
-    h2 = event.target;
+    var imgparent = event.target.parentNode;
+    newparentimg = document.createElement("DIV");
+    img = event.target;
     //var h1text = h1.innerHTML;
-    h2parent.replaceChild(newparent2, h2);
-    newparent2.appendChild(h2);
-    h2value = newparent2.innerHTML;
-    h2value = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    h2value = h2value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    input.innerText = h2value;
+    imgparent.replaceChild(newparentimg, img);
+    newparentimg.appendChild(img);
+    imgvalue = newparentimg.innerHTML;
+    imgvalue = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    imgvalue = imgvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = imgvalue;
     document.body.appendChild(input);
     document.body.appendChild(button);
     document.body.appendChild(container);
-    button.addEventListener("click", seth2, false);
+    button.addEventListener("click", setimg, false);
 }
-function seth2()
+function setimg()
 {
     //alert("test");
-    var h2settext = input.textContent;
-    newparent2.innerHTML = h2settext;
-    newparent2.addEventListener("mouseover", lightUp, false);
-    newparent2.addEventListener("mouseout", unLightUp, false);
-    newparent2.addEventListener("click", clickh2, false);
+    var imgsettext = input.textContent;
+    newparentimg.innerHTML = imgsettext;
+    newparentimg.addEventListener("mouseover", lightUp, false);
+    newparentimg.addEventListener("mouseout", unLightUp, false);
+    newparentimg.addEventListener("click", clickimg, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

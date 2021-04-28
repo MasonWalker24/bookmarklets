@@ -110,7 +110,7 @@ const headlines3 = document.getElementsByTagName("h3");
 for (const headline3 of headlines3) {
     headline3.addEventListener("mouseover", lightUp, false);
     headline3.addEventListener("mouseout", unLightUp, false);
-    //headline3.addEventListener("click", clickh3, false);
+    headline3.addEventListener("click", clickh3, false);
 }
 
 //add all h4 elements
@@ -242,7 +242,7 @@ var h3;
 var h3parent;
 var h3value;
 var newparent3;
-function clickh2(event)
+function clickh3(event)
 {
     var h3parent = event.target.parentNode;
     newparent3 = document.createElement("DIV");
@@ -259,7 +259,7 @@ function clickh2(event)
     document.body.appendChild(container);
     button.addEventListener("click", seth2, false);
 }
-function seth2()
+function seth3()
 {
     //alert("test");
     var h3settext = input.textContent;

@@ -1,19 +1,16 @@
-var button = document.createElement("BUTTON");
-var isConsole = "false";
-var button2 = document.createElement("BUTTON");
+var changebutton = document.createElement("BUTTON");
 var container = document.createElement("DIV");
 var input = document.createElement("H2");
-var console = document.createElement("H2");
 
-button.style.position = "fixed";
-button.style.width = "10%";
-button.style.height = "7%";
-button.style.left = "88%";
-button.style.border = "2px solid black";
-button.style.background = "white";
-button.style.fontSize = "1.7vw";
-button.style.zIndex = "200";
-button.style.top = "86.5%";
+changebutton.style.position = "fixed";
+changebutton.style.width = "10%";
+changebutton.style.height = "7%";
+changebutton.style.left = "88%";
+changebutton.style.border = "2px solid black";
+changebutton.style.background = "white";
+changebutton.style.fontSize = "1.7vw";
+changebutton.style.zIndex = "200";
+changebutton.style.top = "86.5%";
 
 input.style.position = "fixed";
 input.style.width = "80%";
@@ -36,51 +33,10 @@ container.style.opacity = ".7";
 container.style.zIndex = "100";
 container.style.left = "0";
 
-button2.style.position = "fixed";
-button2.style.width = "10%";
-button2.style.height = "12%";
-button2.style.left = "90%";
-button2.style.border = "2px solid black";
-button2.style.background = "white";
-button2.style.fontSize = "1.7vw";
-button2.style.zIndex = "200";
-button2.addEventListener("click", openConsole, false);
-
-console.style.position = "fixed";
-console.style.background = "white";
-console.style.border = "2px solid black";
-console.style.width = "80%";
-console.style.height = "10%";
-console.style.top = "75%";
-console.style.left = "5%";
-console.style.display = "none";
-
-button2.innerHTML = "Open Console";
-var consoleAtt = document.createAttribute("contenteditable");
-consoleAtt.value = "true";
-console.setAttributeNode(consoleAtt);
-document.body.appendChild(button2);
-document.body.appendChild(console);
-
 
 
 //console functions and variables
 
-function openConsole()
-{
-    if(isConsole == "false")
-    {
-    console.style.display = "block";
-    button2.innerHTML = "Close Console";
-        isConsole = "true";
-    } else
-    {
-        console.style.display = "none";
-        console.innerHTML = "";
-        button2.innerHTML = "Open Console";
-        isConsole = "false";
-    }
-}
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
@@ -162,12 +118,13 @@ for (const div of divs) {
     //div.addEventListener("click", clickdiv, false);
 }
 
+//add all buttons
+
 const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
     button.addEventListener("mouseover", lightUp, false);
     button.addEventListener("mouseout", unLightUp, false);
     button.disabled = "true";
-    button2.disabled = "false";
 }
 
 

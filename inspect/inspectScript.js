@@ -148,9 +148,9 @@ function clickh1(event)
     h1value = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h1value;
     document.body.appendChild(input);
-    document.body.appendChild(button);
+    document.body.appendChild(changebutton);
     document.body.appendChild(container);
-    button.addEventListener("click", seth1, false);
+    changebutton.addEventListener("click", seth1, false);
 }
 function seth1()
 {
@@ -160,7 +160,7 @@ function seth1()
     newparent.addEventListener("mouseover", lightUp, false);
     newparent.addEventListener("mouseout", unLightUp, false);
     newparent.addEventListener("click", clickh1, false);
-    button.remove();
+    changebutton.remove();
     container.remove();
     input.innerHTML = "";
     input.remove();
@@ -185,9 +185,9 @@ function clickh2(event)
     h2value = h2value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h2value;
     document.body.appendChild(input);
-    document.body.appendChild(button);
+    document.body.appendChild(changebutton);
     document.body.appendChild(container);
-    button.addEventListener("click", seth2, false);
+    changebutton.addEventListener("click", seth2, false);
 }
 function seth2()
 {
@@ -197,7 +197,7 @@ function seth2()
     newparent2.addEventListener("mouseover", lightUp, false);
     newparent2.addEventListener("mouseout", unLightUp, false);
     newparent2.addEventListener("click", clickh2, false);
-    button.remove();
+    changebutton.remove();
     container.remove();
     input.innerHTML = "";
     input.remove();

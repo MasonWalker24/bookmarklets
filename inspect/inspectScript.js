@@ -222,9 +222,9 @@ function clickh3(event)
     h3value = h3value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h3value;
     document.body.appendChild(input);
-    document.body.appendChild(button);
+    document.body.appendChild(changebutton);
     document.body.appendChild(container);
-    button.addEventListener("click", seth3, false);
+    changebutton.addEventListener("click", seth3, false);
 }
 function seth3()
 {
@@ -234,7 +234,7 @@ function seth3()
     newparent3.addEventListener("mouseover", lightUp, false);
     newparent3.addEventListener("mouseout", unLightUp, false);
     newparent3.addEventListener("click", clickh3, false);
-    button.remove();
+    changebutton.remove();
     container.remove();
     input.innerHTML = "";
     input.remove();
@@ -259,9 +259,9 @@ function clickp(event)
     pvalue = pvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = pvalue;
     document.body.appendChild(input);
-    document.body.appendChild(button);
+    document.body.appendChild(changebutton);
     document.body.appendChild(container);
-    button.addEventListener("click", setp, false);
+    changebutton.addEventListener("click", setp, false);
 }
 function setp()
 {
@@ -271,7 +271,7 @@ function setp()
     newparentp.addEventListener("mouseover", lightUp, false);
     newparentp.addEventListener("mouseout", unLightUp, false);
     newparentp.addEventListener("click", clickp, false);
-    button.remove();
+    changebutton.remove();
     container.remove();
     input.innerHTML = "";
     input.remove();
@@ -296,9 +296,9 @@ function clicka(event)
     avalue = avalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = avalue;
     document.body.appendChild(input);
-    document.body.appendChild(button);
+    document.body.appendChild(changebutton);
     document.body.appendChild(container);
-    button.addEventListener("click", seta, false);
+    changebutton.addEventListener("click", seta, false);
 }
 function seta()
 {
@@ -308,7 +308,7 @@ function seta()
     newparenta.addEventListener("mouseover", lightUp, false);
     newparenta.addEventListener("mouseout", unLightUp, false);
     newparenta.addEventListener("click", clicka, false);
-    button.remove();
+    changebutton.remove();
     container.remove();
     input.innerHTML = "";
     input.remove();

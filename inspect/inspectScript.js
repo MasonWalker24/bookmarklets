@@ -140,6 +140,7 @@ for (const link of links) {
     link.addEventListener("mouseover", lightUp, false);
     link.addEventListener("mouseout", unLightUp, false);
     link.addEventListener("click", clicka, false);
+    link.removeAttribute("href");
 }
 
 
@@ -159,6 +160,13 @@ for (const div of divs) {
     div.addEventListener("mouseover", lightUp, false);
     div.addEventListener("mouseout", unLightUp, false);
     //div.addEventListener("click", clickdiv, false);
+}
+
+const buttons = document.getElementsByTagName("button");
+for (const button of buttons) {
+    button.addEventListener("mouseover", lightUp, false);
+    button.addEventListener("mouseout", unLightUp, false);
+    button.disabled = "true";
 }
 
 

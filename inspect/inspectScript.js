@@ -274,7 +274,7 @@ function seth3()
     input.remove();
 }
 
-// change img elements
+// change P elements
 
 var p;
 var pparent;
@@ -305,6 +305,43 @@ function setp()
     newparentp.addEventListener("mouseover", lightUp, false);
     newparentp.addEventListener("mouseout", unLightUp, false);
     newparentp.addEventListener("click", clickp, false);
+    button.remove();
+    container.remove();
+    input.innerHTML = "";
+    input.remove();
+}
+
+//change A elements
+
+var a;
+var aparent;
+var avalue;
+var newparenta;
+function clicka(event)
+{
+    var aparent = event.target.parentNode;
+    newparenta = document.createElement("DIV");
+    a = event.target;
+    //var h1text = h1.innerHTML;
+    aparent.replaceChild(newparenta, a);
+    newparenta.appendChild(a);
+    avalue = newparenta.innerHTML;
+    avalue = avalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    avalue = avalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = avalue;
+    document.body.appendChild(input);
+    document.body.appendChild(button);
+    document.body.appendChild(container);
+    button.addEventListener("click", seta, false);
+}
+function seta()
+{
+    //alert("test");
+    var asettext = input.textContent;
+    newparenta.innerHTML = asettext;
+    newparenta.addEventListener("mouseover", lightUp, false);
+    newparenta.addEventListener("mouseout", unLightUp, false);
+    newparenta.addEventListener("click", clicka, false);
     button.remove();
     container.remove();
     input.innerHTML = "";

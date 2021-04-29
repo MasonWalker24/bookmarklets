@@ -139,7 +139,7 @@ const links = document.getElementsByTagName("a");
 for (const link of links) {
     link.addEventListener("mouseover", lightUp, false);
     link.addEventListener("mouseout", unLightUp, false);
-    //link.addEventListener("click", clicka, false);
+    link.addEventListener("click", clicka, false);
 }
 
 

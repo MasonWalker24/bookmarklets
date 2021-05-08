@@ -46,9 +46,9 @@ console.setAttributeNode(consoleAtt);
 console.style.height = "7%";
 console.style.top = "83.5%";
 console.style.left = "5%";
-console.style.border = "2px solid black";
+console.style.border = "none";
 console.style.zIndex = "101";
-console.style.color = "white";
+console.style.backgroundColor = "white";
 
 container.style.width = "100%";
 container.style.height = "20%";

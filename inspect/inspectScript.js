@@ -62,7 +62,7 @@ container.style.left = "0";
 
 
 
-console functions and variables
+//console functions and variables
 var isConsole = false;
 function changeConsole()
 {

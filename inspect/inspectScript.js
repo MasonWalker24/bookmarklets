@@ -61,7 +61,7 @@ container.style.left = "0";
 
 
 consolebutton.addEventListener("click", changeconsole, false);
-document.body.appendChild(consolebutton);
+
 //console functions and variables
 var isConsole = false;
 function changeconsole()
@@ -185,7 +185,7 @@ for (const button of buttons) {
     button.addEventListener("mouseout", unLightUp, false);
     button.addEventListener("click", clickbtn, false);
 }
-
+document.body.appendChild(consolebutton);
 
 // the start of all the rest of the tag changing and getting.
 

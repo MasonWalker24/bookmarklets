@@ -41,7 +41,7 @@ input.style.color = "white";
 
 console.style.position = "fixed";
 console.style.width = "80%";
-consoleAtt = document.createAttribute("contenteditable");
+var consoleAtt = document.createAttribute("contenteditable");
 consoleAtt.value = "true";
 console.setAttributeNode(inputAtt);
 console.style.height = "7%"
@@ -63,22 +63,22 @@ container.style.left = "0";
 
 
 //console functions and variables
-var isConsole = false;
-function changeConsole()
-{
-  if(isConsole == false)
-  {
-      document.body.appendChild(console);
-      document.body.appendChild(container);
-      consolebutton.innerHTML = "Close Console";
-  }
-  else
-  {
-      console.remove();
-      container.remove();
-      consolebutton.innerHTML = "Open Console";
-  }
-}
+//var isConsole = false;
+//function changeConsole()
+//{
+  //if(isConsole == false)
+  //{
+    //  document.body.appendChild(console);
+      //document.body.appendChild(container);
+      //consolebutton.innerHTML = "Close Console";
+  //}
+  //else
+  //{
+    //  console.remove();
+      //container.remove();
+      //consolebutton.innerHTML = "Open Console";
+  //}
+//}
 
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");

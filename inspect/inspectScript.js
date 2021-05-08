@@ -222,6 +222,7 @@ function seth1()
     container.remove();
     input.innerHTML = "";
     input.remove();
+   changebutton.removeEventListener("click", seth1, false);
 }
 
 //changing h2 elements
@@ -259,6 +260,7 @@ function seth2()
     container.remove();
     input.innerHTML = "";
     input.remove();
+   changebutton.removeEventListener("click", seth2, false);
 }
 
 //change h3 elements
@@ -296,6 +298,7 @@ function seth3()
     container.remove();
     input.innerHTML = "";
     input.remove();
+   changebutton.removeEventListener("click", seth3, false);
 }
 
 // change P elements
@@ -333,6 +336,7 @@ function setp()
     container.remove();
     input.innerHTML = "";
     input.remove();
+   changebutton.removeEventListener("click", setp, false);
 }
 
 //change A elements
@@ -370,4 +374,5 @@ function seta()
     container.remove();
     input.innerHTML = "";
     input.remove();
+   changebutton.removeEventListener("click", seta, false);
 }

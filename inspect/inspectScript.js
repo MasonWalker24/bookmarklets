@@ -3,7 +3,6 @@ var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var console = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
-document.body.appendChild(consolebutton);
 
 changebutton.style.position = "fixed";
 changebutton.style.width = "10%";
@@ -26,6 +25,7 @@ consolebutton.style.zIndex = "200";
 consolebutton.style.top = "46.5%";
 consolebutton.innerHTML = "Open Console";
 consolebutton.addEventListener("click", changeConsole, false);
+document.body.appendChild(consolebutton);
 
 input.style.position = "fixed";
 input.style.width = "80%";

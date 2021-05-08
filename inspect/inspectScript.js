@@ -38,17 +38,17 @@ input.style.border = "2px solid black";
 input.style.zIndex = "101";
 input.style.color = "white";
 
-console.style.position = "fixed";
-console.style.width = "80%";
+//console.style.position = "fixed";
+//console.style.width = "80%";
 //consoleAtt = document.createAttribute("contenteditable");
 //consoleAtt.value = "true";
-console.setAttributeNode(inputAtt);
-console.style.height = "7%";
-console.style.top = "83.5%";
-console.style.left = "5%";
-console.style.border = "2px solid black";
-console.style.zIndex = "101";
-console.style.color = "white";
+//console.setAttributeNode(inputAtt);
+//console.style.height = "7%";
+//console.style.top = "83.5%";
+//console.style.left = "5%";
+//console.style.border = "2px solid black";
+//console.style.zIndex = "101";
+//console.style.color = "white";
 
 container.style.width = "100%";
 container.style.height = "20%";

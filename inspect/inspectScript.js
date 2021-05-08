@@ -63,22 +63,22 @@ container.style.left = "0";
 
 
 //console functions and variables
-var isConsole = false;
-function changeConsole()
-{
-  if(isConsole == false)
-  {
-      document.body.appendChild(console);
-      document.body.appendChild(container);
-      consolebutton.innerHTML = "Close Console";
-  }
-  else
-  {
-      console.remove();
-      container.remove();
-      consolebutton.innerHTML = "Open Console";
-  }
-}
+//var isConsole = false;
+//function changeConsole()
+//{
+  //if(isConsole == false)
+  //{
+    //  document.body.appendChild(console);
+      //document.body.appendChild(container);
+      //consolebutton.innerHTML = "Close Console";
+  //}
+  //else
+  //{
+    //  console.remove();
+      //container.remove();
+      //consolebutton.innerHTML = "Open Console";
+  //}
+//}
 
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");

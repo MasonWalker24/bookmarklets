@@ -68,7 +68,7 @@ function changeconsole()
 {
    if(isConsole == false)
    {
-      document.body.appendChild(console);
+      //document.body.appendChild(console);
       isConsole = true;
    }
    else

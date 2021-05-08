@@ -90,6 +90,7 @@ function execute(event)
    {
       code = console.innerHTML;
       eval(code);
+      console.innerHTML = "";
    }
 }
 //add all h1 elements

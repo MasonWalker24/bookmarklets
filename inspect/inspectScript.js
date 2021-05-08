@@ -50,9 +50,18 @@ container.style.left = "0";
 consolebutton.addEventListener("click", changeconsole, false);
 document.body.appendChild(consolebutton);
 //console functions and variables
+var isConsole = false;
 function changeconsole()
 {
-   alert("test");   
+   if(isConsole == false)
+   {
+      alert("test");
+      isConsole = true;
+   }
+   else
+   {
+      alert("test2");
+   }
 }
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");

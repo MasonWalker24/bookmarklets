@@ -69,11 +69,13 @@ function changeconsole()
    if(isConsole == false)
    {
       document.body.appendChild(console);
+      document.body.appendChild(container);
       isConsole = true;
    }
    else
    {
       console.remove();
+      container.remove();
       isConsole = false;
    }
 }

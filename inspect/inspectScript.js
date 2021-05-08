@@ -3,6 +3,7 @@ var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var console = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
+document.body.appendChild(consolebutton);
 
 changebutton.style.position = "fixed";
 changebutton.style.width = "10%";

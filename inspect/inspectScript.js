@@ -68,12 +68,12 @@ function changeconsole()
 {
    if(isConsole == false)
    {
-      //document.body.appendChild(console);
+      document.body.appendChild(console);
       isConsole = true;
    }
    else
    {
-      //console.remove();
+      console.remove();
       isConsole = false;
    }
 }

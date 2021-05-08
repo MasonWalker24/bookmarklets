@@ -40,8 +40,8 @@ input.style.color = "white";
 
 console.style.position = "fixed";
 console.style.width = "80%";
-consoleAtt = document.createAttribute("contenteditable");
-consoleAtt.value = "true";
+//consoleAtt = document.createAttribute("contenteditable");
+//consoleAtt.value = "true";
 console.setAttributeNode(inputAtt);
 console.style.height = "7%";
 console.style.top = "83.5%";

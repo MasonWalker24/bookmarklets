@@ -89,7 +89,10 @@ function execute(event)
    if(event.keyCode == 13)
    {
       code = console.innerHTML;
-      console.innerHTML = "";
+      console.remove();
+      container.remove();
+      isConsole = false;
+      consolebutton.innerHTML = "Open Console";
       eval(code);
    }
 }

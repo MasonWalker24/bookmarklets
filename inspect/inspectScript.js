@@ -88,8 +88,8 @@ function execute(event)
 {
    if(event.keyCode == 13)
    {
-      console.innerHTML = "";
       code = console.innerHTML;
+      console.innerHTML = "";
       eval(code);
    }
 }

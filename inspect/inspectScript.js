@@ -106,7 +106,11 @@ for (const headline of headlines) {
 }
 
 function lightUp(event) {
-  event.target.style.boxShadow = "0px 0px 5px blue";
+  //event.target.style.boxShadow = "0px 0px 5px blue";
+   overlay.style = event.target.style;
+   overlay.style.zIndex = "999";
+   overlay.style.backgroundColor = "orange";
+   overlay.style.opacity = ".4";
 }
 function unLightUp(event)
 {

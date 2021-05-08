@@ -1,7 +1,7 @@
 var changebutton = document.createElement("BUTTON");
 var container = document.createElement("DIV");
 var input = document.createElement("H2");
-var consolebutton = document.createElement("H2");
+var consolebutton = document.createElement("BUTTON");
 
 changebutton.style.position = "fixed";
 changebutton.style.width = "10%";
@@ -22,6 +22,7 @@ consolebutton.style.background = "white";
 consolebutton.style.fontSize = "1.7vw";
 consolebutton.style.zIndex = "200";
 consolebutton.style.top = "46.5%";
+consolebutton.innerHTML = "Open Console";
 
 
 input.style.position = "fixed";

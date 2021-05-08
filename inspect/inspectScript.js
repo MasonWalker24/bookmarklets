@@ -88,9 +88,9 @@ function execute(event)
 {
    if(event.keyCode == 13)
    {
+      console.innerHTML = "";
       code = console.innerHTML;
       eval(code);
-      console.innerHTML = "";
    }
 }
 //add all h1 elements

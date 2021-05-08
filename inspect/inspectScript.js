@@ -142,6 +142,7 @@ for (const button of buttons) {
     button.addEventListener("mouseover", lightUp, false);
     button.addEventListener("mouseout", unLightUp, false);
     button.disabled = "true";
+   consolebutton.disabled = "false";
 }
 
 

@@ -181,10 +181,10 @@ for (const div of divs) {
 
 const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
+    button.disabled = "true";
     button.addEventListener("mouseover", lightUp, false);
     button.addEventListener("mouseout", unLightUp, false);
     button.addEventListener("click", clickbtn, false);
-    button.disabled = "true";
 }
 document.body.appendChild(consolebutton);
 

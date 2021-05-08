@@ -183,6 +183,7 @@ const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
     button.addEventListener("mouseover", lightUp, false);
     button.addEventListener("mouseout", unLightUp, false);
+    button.addEventListener("click", clickbtn, false);
 }
 
 
@@ -376,3 +377,42 @@ function seta()
     input.remove();
    changebutton.removeEventListener("click", seta, false);
 }
+
+//change buttons
+
+var btn;
+var btnparent;
+var btnvalue;
+var newparentbtn;
+function clickbtn(event)
+{
+    var btnparent = event.target.parentNode;
+    newparentbtn = document.createElement("DIV");
+    btn = event.target;
+    //var h1text = h1.innerHTML;
+    btnparent.replaceChild(newparentbtn, btn);
+    newparentbtn.appendChild(btn);
+    btnvalue = newparentbtn.innerHTML;
+    btnvalue = btnvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    btnvalue = btnvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = btnvalue;
+    document.body.appendChild(input);
+    document.body.appendChild(changebutton);
+    document.body.appendChild(container);
+    changebutton.addEventListener("click", setbtn, false);
+}
+function setbtn()
+{
+    //alert("test");
+    var btnsettext = input.textContent;
+    newparentbtn.innerHTML = btnsettext;
+    newparentbtn.addEventListener("mouseover", lightUp, false);
+    newparentbtn.addEventListener("mouseout", unLightUp, false);
+    newparentbtn.addEventListener("click", clickbtn, false);
+    changebutton.remove();
+    container.remove();
+    input.innerHTML = "";
+    input.remove();
+   changebutton.removeEventListener("click", setbtn, false);
+}
+

@@ -32,7 +32,7 @@ input.style.width = "80%";
 inputAtt = document.createAttribute("contenteditable");
 inputAtt.value = "true";
 input.setAttributeNode(inputAtt);
-input.style.height = "7%"
+input.style.height = "7%";
 input.style.top = "83.5%";
 input.style.left = "5%";
 input.style.border = "2px solid black";
@@ -44,7 +44,7 @@ console.style.width = "80%";
 var consoleAtt = document.createAttribute("contenteditable");
 consoleAtt.value = "true";
 console.setAttributeNode(inputAtt);
-console.style.height = "7%"
+console.style.height = "7%";
 console.style.top = "83.5%";
 console.style.left = "5%";
 console.style.border = "2px solid black";
@@ -55,7 +55,7 @@ container.style.width = "100%";
 container.style.height = "20%";
 container.style.position = "fixed";
 container.style.top = "80%";
-container.style.backgroundColor = "blue"
+container.style.backgroundColor = "blue";
 container.style.opacity = ".7";
 container.style.zIndex = "100";
 container.style.left = "0";

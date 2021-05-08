@@ -68,15 +68,28 @@ function changeconsole()
 {
    if(isConsole == false)
    {
+      document.addEventListener("keydown", execute, false);
       document.body.appendChild(console);
       document.body.appendChild(container);
+      consolebutton.innerHTML = "Close Console";
       isConsole = true;
    }
    else
    {
+      console.innerHTML = "";
       console.remove();
       container.remove();
       isConsole = false;
+      consolebutton.innerHTML = "Open Console";
+   }
+}
+
+function execute(event)
+{
+   if(event.keyCode == 13)
+   {
+      code = console.innerHTML;
+      eval(code);
    }
 }
 //add all h1 elements

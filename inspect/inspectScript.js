@@ -121,7 +121,7 @@ function lightUp(event) {
    overlay.style.height = height;
    overlay.style.left = left;
    overlay.style.top = top;
-   overlay.style.zIndex = "999";
+   overlay.style.zIndex = "102";
    overlay.style.backgroundColor = "orange";
    overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);

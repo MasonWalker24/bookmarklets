@@ -122,8 +122,6 @@ function lightUp(event) {
    overlay.style.backgroundColor = "orange";
    overlay.style.opacity = ".4";
    document.body.appendChild(overlay);
-   alert(top);
-   alert(left);
 }
 function unLightUp(event)
 {

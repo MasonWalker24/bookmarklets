@@ -109,9 +109,9 @@ function lightUp(event) {
   //event.target.style.boxShadow = "0px 0px 5px blue";
    var target = event.target;
    var rect = target.getBoundingClientRect();
-   var width = rect.width;
+   var width = rect.width + 5;
    var height = rect.height - 2;
-   var left = rect.left;
+   var left = rect.left - 2.5;
    var top = rect.top;
    overlay.style.position = target.style.position;
    overlay.style.width = width;

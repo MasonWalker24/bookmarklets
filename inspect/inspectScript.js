@@ -11,7 +11,7 @@ changebutton.style.height = "7%";
 changebutton.style.left = "88%";
 changebutton.style.border = "2px solid black";
 changebutton.style.background = "white";
-changebutton.style.fontSize = ".8vw";
+changebutton.style.fontSize = "0.8vw";
 changebutton.style.zIndex = "200";
 changebutton.style.top = "86.5%";
 

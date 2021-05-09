@@ -50,7 +50,7 @@ console.style.left = "5%";
 console.style.border = "none";
 console.style.zIndex = "101";
 console.style.backgroundColor = "white"
-console.style.fontSize = "0.8vw";
+console.style.fontSize = "1.2vw";
 
 container.style.width = "100%";
 container.style.height = "20%";

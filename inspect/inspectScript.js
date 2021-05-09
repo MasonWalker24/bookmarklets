@@ -11,7 +11,7 @@ changebutton.style.height = "7%";
 changebutton.style.left = "88%";
 changebutton.style.border = "2px solid black";
 changebutton.style.background = "white";
-changebutton.style.fontSize = "0.8vw";
+changebutton.style.fontSize = "1.7vw";
 changebutton.style.zIndex = "200";
 changebutton.style.top = "86.5%";
 
@@ -21,7 +21,7 @@ consolebutton.style.height = "10%";
 consolebutton.style.left = "88%";
 consolebutton.style.border = "2px solid black";
 consolebutton.style.background = "white";
-consolebutton.style.fontSize = "0.8vw";
+consolebutton.style.fontSize = "1.7vw";
 consolebutton.style.zIndex = "900";
 consolebutton.style.top = "46.5%";
 consolebutton.innerHTML = "Open Console";
@@ -49,7 +49,8 @@ console.style.top = "83.5%";
 console.style.left = "5%";
 console.style.border = "none";
 console.style.zIndex = "101";
-console.style.backgroundColor = "white";
+console.style.backgroundColor = "white"
+console.style.fontSize = "0.8vw";
 
 container.style.width = "100%";
 container.style.height = "20%";

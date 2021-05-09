@@ -124,7 +124,7 @@ function lightUp(event) {
    overlay.style.zIndex = "999";
    overlay.style.backgroundColor = "orange";
    overlay.style.opacity = ".4";
-   overlay.addEventListener("click", setelement, false);
+   overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);
 }
 function unLightUp(event)

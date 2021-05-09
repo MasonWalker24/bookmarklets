@@ -122,7 +122,9 @@ function lightUp(event) {
    overlay.style.left = left;
    overlay.style.top = top;
    overlay.style.zIndex = "102";
+   overlay.style.opacity = ".4";
    overlay.style.backgroundColor = "orange";
+   overlay.addEventListener("mouseout", unlightup, false;
    overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);
 }

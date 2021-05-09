@@ -125,7 +125,8 @@ function lightUp(event) {
 }
 function unLightUp(event)
 {
- event.target.style.boxShadow = "0px 0px 0px";   
+ //event.target.style.boxShadow = "0px 0px 0px";  
+   overlay.remove();
 }
 
 //add all h2 elements

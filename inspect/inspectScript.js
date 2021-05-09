@@ -111,12 +111,61 @@ for (const headline of headlines) {
 
 function lightUp(event) {
   event.target.style.boxShadow = "0px 0px 5px blue";
+   //target = event.target;
+   //var rect = target.getBoundingClientRect();
+   //var width = rect.width + 5;
+   //var height = rect.height - 2;
+   //var left = rect.left - 2.5;
+   //var top = rect.top;
+   //overlay.style.position = target.style.position;
+   //overlay.style.width = width;
+   //overlay.style.height = height;
+   //overlay.style.left = left;
+   //overlay.style.top = top;
+   //overlay.style.zIndex = "102";
+   //overlay.style.opacity = ".4";
+   //overlay.style.backgroundColor = "orange";
+   //overlay.addEventListener("click", clickelement, false);
+   //document.body.appendChild(overlay);
 }
 function unLightUp(event)
 {
  event.target.style.boxShadow = "0px 0px 0px";  
+   //overlay.remove();
 }
 
+//function setelement()
+//{
+    //alert("test");
+  //  var elementsettext = input.textContent;
+    //newparentelement.innerHTML = elementsettext;
+    //newparentelement.addEventListener("mouseover", lightUp, false);
+    //newparentelement.addEventListener("mouseout", unLightUp, false);
+    //newparentelement.addEventListener("click", clickelement, false);
+    //changebutton.remove();
+    //container.remove();
+    //input.innerHTML = "";
+    //input.remove();
+   //changebutton.removeEventListener("click", setelement, false);
+//}
+
+
+//function clickelement(event)
+//{
+  //  var elementparent = target.parentNode;
+    //newparentelement = document.createElement("DIV");
+    //element = target;
+    //elementparent.replaceChild(newparentelement, element);
+    //newparentelement.appendChild(element);
+    //elementvalue = newparentelement.innerHTML;
+    //elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    //elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    //input.innerText = elementvalue;
+    //document.body.appendChild(input);
+    //document.body.appendChild(changebutton);
+    //document.body.appendChild(container);
+    //changebutton.addEventListener("click", setelement, false);
+//}
 
 //add all h2 elements
 

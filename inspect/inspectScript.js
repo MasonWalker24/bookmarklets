@@ -123,7 +123,6 @@ function lightUp(event) {
    overlay.style.top = top;
    overlay.style.zIndex = "999";
    overlay.style.backgroundColor = "orange";
-   overlay.style.opacity = ".4";
    overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);
 }
@@ -151,7 +150,7 @@ function setelement()
 
 function clickelement(event)
 {
-    var btnparent = target.parentNode;
+    var elementparent = target.parentNode;
     newparentelement = document.createElement("DIV");
     element = target;
     //var h1text = h1.innerHTML;

@@ -110,7 +110,7 @@ function lightUp(event) {
    var target = event.target;
    var rect = target.getBoundingClientRect();
    var width = rect.width;
-   var height = rect.height;
+   var height = rect.height - 2;
    var left = rect.left;
    var top = rect.left;
    overlay.style.position = target.style.position;

@@ -107,7 +107,17 @@ for (const headline of headlines) {
 
 function lightUp(event) {
   //event.target.style.boxShadow = "0px 0px 5px blue";
-   overlay.style = event.target.style;
+   var target = event.target;
+   var rect = target.getBoundingClientRect();
+   var width = rect.width;
+   var height = rect.height;
+   var left = rect.left;
+   var top = rect.left;
+   overlay.style.position = target.style.position;
+   overlay.style.width = width;
+   overlay.style.height = height;
+   overlay.style.left = left;
+   overlay.style.top = top;
    overlay.style.zIndex = "999";
    overlay.style.backgroundColor = "orange";
    overlay.style.opacity = ".4";

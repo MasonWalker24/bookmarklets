@@ -150,20 +150,20 @@ function setelement()
 
 function clickelement(event)
 {
-    var elementparent = target.parentNode;
-    newparentelement = document.createElement("DIV");
-    element = target;
-    //var h1text = h1.innerHTML;
-    elementparent.replaceChild(newparentelement, element);
-    newparentelement.appendChild(element);
-    elementvalue = newparentelement.innerHTML;
-    elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    input.innerText = elementvalue;
-    document.body.appendChild(input);
-    document.body.appendChild(changebutton);
-    document.body.appendChild(container);
-    changebutton.addEventListener("click", setelement, false);
+   alert("hi");
+    //var elementparent = target.parentNode;
+    //newparentelement = document.createElement("DIV");
+    //element = target;
+    //elementparent.replaceChild(newparentelement, element);
+    //newparentelement.appendChild(element);
+    //elementvalue = newparentelement.innerHTML;
+    //elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    //elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    //input.innerText = elementvalue;
+    //document.body.appendChild(input);
+    //document.body.appendChild(changebutton);
+    //document.body.appendChild(container);
+    //changebutton.addEventListener("click", setelement, false);
 }
 
 //add all h2 elements

@@ -97,6 +97,9 @@ function execute(event)
       eval(code);
    }
 }
+
+var target;
+
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
@@ -107,7 +110,7 @@ for (const headline of headlines) {
 
 function lightUp(event) {
   //event.target.style.boxShadow = "0px 0px 5px blue";
-   var target = event.target;
+   target = event.target;
    var rect = target.getBoundingClientRect();
    var width = rect.width + 5;
    var height = rect.height - 2;

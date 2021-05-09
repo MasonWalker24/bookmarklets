@@ -124,12 +124,47 @@ function lightUp(event) {
    overlay.style.zIndex = "999";
    overlay.style.backgroundColor = "orange";
    overlay.style.opacity = ".4";
+   overlay.addEventListener("click", setelement, false);
    document.body.appendChild(overlay);
 }
 function unLightUp(event)
 {
  //event.target.style.boxShadow = "0px 0px 0px";  
    overlay.remove();
+}
+
+function setelement()
+{
+    //alert("test");
+    var elementsettext = input.textContent;
+    newparentelement.innerHTML = elementsettext;
+    newparentelement.addEventListener("mouseover", lightUp, false);
+    newparentelement.addEventListener("mouseout", unLightUp, false);
+    newparentelement.addEventListener("click", clickelement, false);
+    changebutton.remove();
+    container.remove();
+    input.innerHTML = "";
+    input.remove();
+   changebutton.removeEventListener("click", setelement, false);
+}
+
+
+function clickelement(event)
+{
+    var btnparent = target.parentNode;
+    newparentelement = document.createElement("DIV");
+    element = target;
+    //var h1text = h1.innerHTML;
+    elementparent.replaceChild(newparentelement, element);
+    newparentelement.appendChild(element);
+    elementvalue = newparentelement.innerHTML;
+    elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = elementvalue;
+    document.body.appendChild(input);
+    document.body.appendChild(changebutton);
+    document.body.appendChild(container);
+    changebutton.addEventListener("click", setelement, false);
 }
 
 //add all h2 elements

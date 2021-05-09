@@ -22,7 +22,7 @@ consolebutton.style.left = "88%";
 consolebutton.style.border = "2px solid black";
 consolebutton.style.background = "white";
 consolebutton.style.fontSize = "1.7vw";
-consolebutton.style.zIndex = "200";
+consolebutton.style.zIndex = "900";
 consolebutton.style.top = "46.5%";
 consolebutton.innerHTML = "Open Console";
 

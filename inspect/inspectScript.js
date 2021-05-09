@@ -124,7 +124,6 @@ function lightUp(event) {
    overlay.style.zIndex = "102";
    overlay.style.opacity = ".4";
    overlay.style.backgroundColor = "orange";
-   overlay.addEventListener("mouseout", unlightup, false);
    overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);
 }
@@ -152,20 +151,19 @@ function setelement()
 
 function clickelement(event)
 {
-   alert("hi");
-    //var elementparent = target.parentNode;
-    //newparentelement = document.createElement("DIV");
-    //element = target;
-    //elementparent.replaceChild(newparentelement, element);
-    //newparentelement.appendChild(element);
-    //elementvalue = newparentelement.innerHTML;
-    //elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    //elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    //input.innerText = elementvalue;
-    //document.body.appendChild(input);
-    //document.body.appendChild(changebutton);
-    //document.body.appendChild(container);
-    //changebutton.addEventListener("click", setelement, false);
+    var elementparent = target.parentNode;
+    newparentelement = document.createElement("DIV");
+    element = target;
+    elementparent.replaceChild(newparentelement, element);
+    newparentelement.appendChild(element);
+    elementvalue = newparentelement.innerHTML;
+    elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = elementvalue;
+    document.body.appendChild(input);
+    document.body.appendChild(changebutton);
+    document.body.appendChild(container);
+    changebutton.addEventListener("click", setelement, false);
 }
 
 //add all h2 elements

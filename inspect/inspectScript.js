@@ -267,6 +267,8 @@ function clickh1(event)
     h1value = h1value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     h1value = h1value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h1value;
+    console.remove();
+    container.remove();
     document.body.appendChild(input);
     document.body.appendChild(changebutton);
     document.body.appendChild(container);
@@ -305,6 +307,8 @@ function clickh2(event)
     h2value = h2value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     h2value = h2value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h2value;
+    console.remove();
+    container.remove();
     document.body.appendChild(input);
     document.body.appendChild(changebutton);
     document.body.appendChild(container);
@@ -343,6 +347,8 @@ function clickh3(event)
     h3value = h3value.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     h3value = h3value.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = h3value;
+    console.remove();
+    container.remove();
     document.body.appendChild(input);
     document.body.appendChild(changebutton);
     document.body.appendChild(container);
@@ -381,6 +387,8 @@ function clickp(event)
     pvalue = pvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     pvalue = pvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = pvalue;
+    console.remove();
+    container.remove();
     document.body.appendChild(input);
     document.body.appendChild(changebutton);
     document.body.appendChild(container);
@@ -419,6 +427,8 @@ function clicka(event)
     avalue = avalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     avalue = avalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = avalue;
+    console.remove();
+    container.remove();
     document.body.appendChild(input);
     document.body.appendChild(changebutton);
     document.body.appendChild(container);
@@ -457,6 +467,8 @@ function clickbtn(event)
     btnvalue = btnvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
     btnvalue = btnvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
     input.innerText = btnvalue;
+    console.remove();
+    container.remove();
     document.body.appendChild(input);
     document.body.appendChild(changebutton);
     document.body.appendChild(container);

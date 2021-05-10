@@ -116,7 +116,7 @@ function lightUp(event) {
    var width = rect.width + 5;
    var height = rect.height - 2;
    var left = rect.left - 2.5;
-   var top = rect.top;
+   var top = rect.top - 5;
    overlay.style.cursor = "pointer";
    overlay.style.position = target.style.position;
    overlay.style.width = width;

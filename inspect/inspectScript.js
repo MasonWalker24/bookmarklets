@@ -4,6 +4,7 @@ var input = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
 var console = document.createElement("H2");
 var overlay = document.createElement("DIV");
+overlay.addEventListener("click", clickelement, false);
 
 changebutton.style.position = "fixed";
 changebutton.style.width = "10%";
@@ -125,8 +126,6 @@ function lightUp(event) {
    overlay.style.zIndex = "102";
    overlay.style.opacity = ".4";
    overlay.style.backgroundColor = "orange";
-   overlay.style.cursor = "inital";
-   overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);
 }
 function unLightUp(event)

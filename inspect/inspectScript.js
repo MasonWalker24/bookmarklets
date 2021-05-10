@@ -3,7 +3,7 @@ var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
 var console = document.createElement("H2");
-var overlay = document.createElement("DIV");
+var overlay = document.createElement("H1");
 overlay.addEventListener("click", clickelement, false);
 
 changebutton.style.position = "fixed";

@@ -118,7 +118,7 @@ function lightUp(event) {
    var height = rect.height - 2;
    var left = rect.left - 2.5;
    var top = rect.top;
-   overlay.style.position = target.style.position;
+   overlay.style.position = "absolute";
    overlay.style.width = width;
    overlay.style.height = height;
    overlay.style.left = left;

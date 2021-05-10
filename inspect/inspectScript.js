@@ -123,7 +123,7 @@ function lightUp(event) {
    overlay.style.height = height;
    overlay.style.left = left;
    overlay.style.top = top;
-   overlay.style.zIndex = "102";
+   overlay.style.zIndex = "10000";
    overlay.style.opacity = ".4";
    overlay.style.backgroundColor = "orange";
    document.body.appendChild(overlay);

@@ -128,7 +128,7 @@ function lightUp(event) {
    overlay.style.backgroundColor = "orange";
    document.body.appendChild(overlay);
    overlay.addEventListener("click", clickelement, false);
-   //overlay.addEventListener("mouseout", unLightUp, false);
+   overlay.addEventListener("mouseout", unLightUp, false);
 
 }
 function unLightUp(event)

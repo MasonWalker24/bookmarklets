@@ -105,7 +105,7 @@ var target;
 const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
     headline.addEventListener("mouseover", lightUp, false);
-    headline.addEventListener("mouseout", unLightUp, false);
+    //headline.addEventListener("mouseout", unLightUp, false);
     //headline.addEventListener("click", clickh1, false);
 }
 
@@ -128,6 +128,7 @@ function lightUp(event) {
    overlay.style.backgroundColor = "orange";
    document.body.appendChild(overlay);
    overlay.addEventListener("click", clickelement, false);
+   //overlay.addEventListener("mouseout", unLightUp, false);
 
 }
 function unLightUp(event)

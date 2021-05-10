@@ -117,24 +117,24 @@ function lightUp(event) {
    var height = rect.height - 2;
    var left = rect.left - 2.5;
    var top = rect.top;
-   overlay.style.position = target.style.position;
-   overlay.style.border = "none";
-   overlay.style.width = width;
-   overlay.style.height = height;
-   overlay.style.left = left;
-   overlay.style.top = top;
-   overlay.style.zIndex = "10000";
-   overlay.style.opacity = ".4";
-   overlay.style.backgroundColor = "orange";
+   coverup.style.position = target.style.position;
+   coverup.style.border = "none";
+   coverup.style.width = width;
+   coverup.style.height = height;
+   coverup.style.left = left;
+   coverup.style.top = top;
+   coverup.style.zIndex = "10000";
+   coverup.style.opacity = ".4";
+   coverup.style.backgroundColor = "orange";
    document.body.appendChild(overlay);
-   overlay.addEventListener("click", clickelement, false);
-   overlay.addEventListener("mouseout", unLightUp, false);
+   coverup.addEventListener("click", clickelement, false);
+   coverup.addEventListener("mouseout", unLightUp, false);
 
 }
 function unLightUp(event)
 {
    //target.style.boxShadow = "0px 0px 0px";  
-   overlay.remove();
+   coverup.remove();
 }
 
 function setelement()

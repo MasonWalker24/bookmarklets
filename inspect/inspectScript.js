@@ -3,7 +3,7 @@ var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
 var console = document.createElement("H2");
-var overlay = document.createElement("DIV");
+var overlay = document.createElement("BUTTON");
 
 changebutton.style.position = "fixed";
 changebutton.style.width = "10%";
@@ -118,6 +118,7 @@ function lightUp(event) {
    var left = rect.left - 2.5;
    var top = rect.top;
    overlay.style.position = target.style.position;
+   overlay.style.border = "none";
    overlay.style.width = width;
    overlay.style.height = height;
    overlay.style.left = left;

@@ -106,7 +106,7 @@ const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
     headline.addEventListener("mouseover", lightUp, false);
     headline.addEventListener("mouseout", unLightUp, false);
-    headline.addEventListener("click", clickh1, false);
+    //headline.addEventListener("click", clickh1, false);
 }
 
 function lightUp(event) {
@@ -117,7 +117,6 @@ function lightUp(event) {
    var height = rect.height - 2;
    var left = rect.left - 2.5;
    var top = rect.top;
-   overlay.style.cursor = "pointer";
    overlay.style.position = target.style.position;
    overlay.style.width = width;
    overlay.style.height = height;
@@ -126,6 +125,7 @@ function lightUp(event) {
    overlay.style.zIndex = "102";
    overlay.style.opacity = ".4";
    overlay.style.backgroundColor = "orange";
+   overlay.style.cursor = "pointer";
    overlay.addEventListener("click", clickelement, false);
    document.body.appendChild(overlay);
 }

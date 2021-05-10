@@ -105,36 +105,36 @@ var target;
 const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
     headline.addEventListener("mouseover", lightUp, false);
-    //headline.addEventListener("mouseout", unLightUp, false);
-    //headline.addEventListener("click", clickh1, false);
+    headline.addEventListener("mouseout", unLightUp, false);
+    headline.addEventListener("click", clickh1, false);
 }
 
 function lightUp(event) {
-   //event.target.style.boxShadow = "0px 0px 5px blue";
-   target = event.target;
-   var rect = target.getBoundingClientRect();
-   var width = rect.width + 5;
-   var height = rect.height - 2;
-   var left = rect.left - 2.5;
-   var top = rect.top;
-   coverup.style.position = target.style.position;
-   coverup.style.border = "none";
-   coverup.style.width = width;
-   coverup.style.height = height;
-   coverup.style.left = left;
-   coverup.style.top = top;
-   coverup.style.zIndex = "10000";
-   coverup.style.opacity = ".4";
-   coverup.style.backgroundColor = "orange";
-   document.body.appendChild(coverup);
-   coverup.addEventListener("click", clickelement, false);
-   coverup.addEventListener("mouseout", unLightUp, false);
+   event.target.style.boxShadow = "0px 0px 5px blue";
+   //target = event.target;
+   //var rect = target.getBoundingClientRect();
+   //var width = rect.width + 5;
+   //var height = rect.height - 2;
+   //var left = rect.left - 2.5;
+   //var top = rect.top;
+   //coverup.style.position = target.style.position;
+   //coverup.style.border = "none";
+   //coverup.style.width = width;
+   //coverup.style.height = height;
+   //coverup.style.left = left;
+   //coverup.style.top = top;
+   //coverup.style.zIndex = "10000";
+   //coverup.style.opacity = ".4";
+   //coverup.style.backgroundColor = "orange";
+   //document.body.appendChild(coverup);
+   //coverup.addEventListener("click", clickelement, false);
+   //coverup.addEventListener("mouseout", unLightUp, false);
 
 }
 function unLightUp(event)
 {
-   //target.style.boxShadow = "0px 0px 0px";  
-   coverup.remove();
+   event.target.style.boxShadow = "0px 0px 0px";  
+   //coverup.remove();
 }
 
 function setelement()
@@ -176,16 +176,16 @@ function clickelement(event)
 const headlines2 = document.getElementsByTagName("h2");
 for (const headline2 of headlines2) {
     headline2.addEventListener("mouseover", lightUp, false);
-    //headline2.addEventListener("mouseout", unLightUp, false);
-    //headline2.addEventListener("click", clickh2, false);
+    headline2.addEventListener("mouseout", unLightUp, false);
+    headline2.addEventListener("click", clickh2, false);
 }
 //add all h3 elements
 
 const headlines3 = document.getElementsByTagName("h3");
 for (const headline3 of headlines3) {
     headline3.addEventListener("mouseover", lightUp, false);
-    //headline3.addEventListener("mouseout", unLightUp, false);
-    //headline3.addEventListener("click", clickh3, false);
+    headline3.addEventListener("mouseout", unLightUp, false);
+    headline3.addEventListener("click", clickh3, false);
 }
 
 //add all h4 elements
@@ -203,8 +203,8 @@ for (const headline4 of headlines4) {
 const paragraphs = document.getElementsByTagName("p");
 for (const paragraph of paragraphs) {
     paragraph.addEventListener("mouseover", lightUp, false);
-    //paragraph.addEventListener("mouseout", unLightUp, false);
-    //paragraph.addEventListener("click", clickp, false);
+    paragraph.addEventListener("mouseout", unLightUp, false);
+    paragraph.addEventListener("click", clickp, false);
 }
 
 //add all A elements
@@ -212,9 +212,9 @@ for (const paragraph of paragraphs) {
 const links = document.getElementsByTagName("a");
 for (const link of links) {
     link.addEventListener("mouseover", lightUp, false);
-    //link.addEventListener("mouseout", unLightUp, false);
-    //link.addEventListener("click", clicka, false);
-    //link.removeAttribute("href");
+    link.addEventListener("mouseout", unLightUp, false);
+    link.addEventListener("click", clicka, false);
+    link.removeAttribute("href");
 }
 
 
@@ -223,8 +223,8 @@ for (const link of links) {
 const images = document.getElementsByTagName("img");
 for (const image of images) {
     image.addEventListener("mouseover", lightUp, false);
-    //image.addEventListener("mouseout", unLightUp, false);
-    //image.addEventListener("click", clickimg, false);
+    image.addEventListener("mouseout", unLightUp, false);
+    image.addEventListener("click", clickimg, false);
 }
 
 //add all div elements
@@ -232,8 +232,8 @@ for (const image of images) {
 const divs = document.getElementsByTagName("div");
 for (const div of divs) {
     div.addEventListener("mouseover", lightUp, false);
-    //div.addEventListener("mouseout", unLightUp, false);
-    //div.addEventListener("click", clickdiv, false);
+    div.addEventListener("mouseout", unLightUp, false);
+    div.addEventListener("click", clickdiv, false);
 }
 
 //add all buttons
@@ -241,8 +241,8 @@ for (const div of divs) {
 const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
     button.addEventListener("mouseover", lightUp, false);
-    //button.addEventListener("mouseout", unLightUp, false);
-    //button.addEventListener("click", clickbtn, false);
+    button.addEventListener("mouseout", unLightUp, false);
+    button.addEventListener("click", clickbtn, false);
 }
 document.body.appendChild(consolebutton);
 

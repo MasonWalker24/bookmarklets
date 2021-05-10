@@ -110,7 +110,7 @@ for (const headline of headlines) {
 }
 
 function lightUp(event) {
-   target.style.boxShadow = "0px 0px 5px blue";
+   event.target.style.boxShadow = "0px 0px 5px blue";
    target = event.target;
    var rect = target.getBoundingClientRect();
    var width = rect.width + 5;

@@ -126,7 +126,7 @@ function lightUp(event) {
    coverup.style.zIndex = "10000";
    coverup.style.opacity = ".4";
    coverup.style.backgroundColor = "orange";
-   document.body.appendChild(overlay);
+   document.body.appendChild(coverup);
    coverup.addEventListener("click", clickelement, false);
    coverup.addEventListener("mouseout", unLightUp, false);
 

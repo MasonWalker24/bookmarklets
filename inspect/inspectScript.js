@@ -94,6 +94,7 @@ function execute(event)
       console.remove();
       container.remove();
       isConsole = false;
+      console.innerHTML = "";
       consolebutton.innerHTML = "Open Console";
       eval(code);
    }

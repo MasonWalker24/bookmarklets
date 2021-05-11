@@ -130,7 +130,7 @@ function lightUp(event) {
    orangeblob.style.backgroundColor = "orange";
    document.body.appendChild(orangeblob);
    orangeblob.addEventListener("click", clickelement, false);
-   coverup.addEventListener("mouseout", unLightUp, false);
+   orangeblob.addEventListener("mouseout", unLightUp, false);
    
 
 }

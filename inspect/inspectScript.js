@@ -248,6 +248,15 @@ for (const button of buttons) {
     //button.addEventListener("click", clickbtn, false);
 }
 
+//add span elements
+
+const spans = document.getElementsByTagName("span");
+for (const span of spans) {
+    span.addEventListener("mouseover", lightUp, false);
+    //span.addEventListener("mouseout", unLightUp, false);
+    //span.addEventListener("click", clickbtn, false);
+}
+
 
 // the start of all the rest of the tag changing and getting.
 

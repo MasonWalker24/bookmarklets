@@ -112,31 +112,31 @@ for (const headline of headlines) {
 }
 
 function lightUp(event) {
-   event.target.style.boxShadow = "0px 0px 5px blue";
-   //target = event.target;
+   //event.target.style.boxShadow = "0px 0px 5px blue";
+   target = event.target;
    //var rect = target.getBoundingClientRect();
    //var width = rect.width + 5;
    //var height = rect.height - 2;
    //var left = rect.left - 2.5;
    //var top = rect.top;
-   //coverup.style.position = target.style.position;
-   //coverup.style.border = "none";
-   //coverup.style.width = width;
-   //coverup.style.height = height;
+   coverup.style.position = "absolute";
+   coverup.style.border = "none";
+   coverup.style.width = "100%";
+   coverup.style.height = "100%";
    //coverup.style.left = left;
    //coverup.style.top = top;
-   //coverup.style.zIndex = "10000";
-   //coverup.style.opacity = ".4";
-   //coverup.style.backgroundColor = "orange";
-   //document.body.appendChild(coverup);
+   coverup.style.zIndex = "10000";
+   coverup.style.opacity = ".4";
+   coverup.style.backgroundColor = "orange";
+   document.body.appendChild(coverup);
    //coverup.addEventListener("click", clickelement, false);
-   //coverup.addEventListener("mouseout", unLightUp, false);
+   coverup.addEventListener("mouseout", unLightUp, false);
 
 }
 function unLightUp(event)
 {
-   event.target.style.boxShadow = "0px 0px 0px";  
-   //coverup.remove();
+   //event.target.style.boxShadow = "0px 0px 0px";  
+   coverup.remove();
 }
 
 function setelement()
@@ -213,8 +213,8 @@ for (const paragraph of paragraphs) {
 
 const links = document.getElementsByTagName("a");
 for (const link of links) {
-    link.addEventListener("mouseover", lightUp, false);
-    link.addEventListener("mouseout", unLightUp, false);
+    link.addEventListener("mouseover", lightUpA, false);
+    link.addEventListener("mouseout", unLightUpA, false);
     link.addEventListener("click", clicka, false);
     link.removeAttribute("href");
 }

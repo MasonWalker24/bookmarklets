@@ -119,10 +119,10 @@ function lightUp(event) {
    var height = rect.height - 2;
    var left = rect.left - 2.5;
    var top = rect.top;
-   orangeblob.style.position = "absolute";
+   orangeblob.style.position = target.style.position;
    orangeblob.style.border = "none";
-   orangeblob.style.width = "100%";
-   orangeblob.style.height = "100%";
+   orangeblob.style.width = width;
+   orangeblob.style.height = height;
    orangeblob.style.left = left;
    orangeblob.style.top = top;
    orangeblob.style.zIndex = "10000";

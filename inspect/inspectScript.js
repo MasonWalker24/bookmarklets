@@ -3,7 +3,7 @@ var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
 var console = document.createElement("H2");
-var coverup = document.createElement("DIV");
+var orangeblob = document.createElement("DIV");
 
 changebutton.style.position = "fixed";
 changebutton.style.width = "10%";
@@ -114,23 +114,24 @@ for (const headline of headlines) {
 function lightUp(event) {
    //event.target.style.boxShadow = "0px 0px 5px blue";
    target = event.target;
-   //var rect = target.getBoundingClientRect();
-   //var width = rect.width + 5;
-   //var height = rect.height - 2;
-   //var left = rect.left - 2.5;
-   //var top = rect.top;
-   coverup.style.position = "absolute";
-   coverup.style.border = "none";
-   coverup.style.width = "100%";
-   coverup.style.height = "100%";
-   //coverup.style.left = left;
-   //coverup.style.top = top;
-   coverup.style.zIndex = "10000";
-   coverup.style.opacity = ".4";
-   coverup.style.backgroundColor = "orange";
-   document.body.appendChild(coverup);
-   //coverup.addEventListener("click", clickelement, false);
+   var rect = target.getBoundingClientRect();
+   var width = rect.width + 5;
+   var height = rect.height - 2;
+   var left = rect.left - 2.5;
+   var top = rect.top;
+   orangeblob.style.position = "absolute";
+   orangeblob.style.border = "none";
+   orangeblob.style.width = "100%";
+   orangeblob.style.height = "100%";
+   orangeblob.style.left = left;
+   orangeblob.style.top = top;
+   orangeblob.style.zIndex = "10000";
+   orangeblob.style.opacity = ".4";
+   orangeblob.style.backgroundColor = "orange";
+   document.body.appendChild(orangeblob);
+   orangeblob.addEventListener("click", clickelement, false);
    coverup.addEventListener("mouseout", unLightUp, false);
+   
 
 }
 function unLightUp(event)

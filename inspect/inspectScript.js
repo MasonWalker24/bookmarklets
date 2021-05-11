@@ -137,7 +137,7 @@ function lightUp(event) {
 function unLightUp(event)
 {
    //event.target.style.boxShadow = "0px 0px 0px";  
-   coverup.remove();
+   orangeblob.remove();
 }
 
 function setelement()

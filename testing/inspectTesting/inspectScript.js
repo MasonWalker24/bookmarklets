@@ -502,6 +502,8 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
-   element.remove();
-   //element.addEventListener("lightUp 
+   //element.remove();
+    element.addEventListener("mouseover", lightUp, false);
+    element.addEventListener("mouseout", unLightUp, false);
+    element.addEventListener("click", clickh1, false);
 }

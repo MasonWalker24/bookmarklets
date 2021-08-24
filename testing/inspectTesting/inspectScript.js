@@ -506,4 +506,4 @@ const elements = document.body.children;
    //element.addEventListener("lightUp 
 }
 */
-alert("test");
+alert(elements.length.toString());

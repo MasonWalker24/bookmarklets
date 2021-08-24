@@ -509,6 +509,7 @@ for(const element of elements)
    if(element.tagName == "button")
    {
       element.removeListener("click", clickElement, false);
+   }
 }
 function clickElement(event)
 {

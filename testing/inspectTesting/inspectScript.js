@@ -110,7 +110,7 @@ for (const headline of headlines) {
     headline.addEventListener("mouseout", unLightUp, false);
     headline.addEventListener("click", clickh1, false);
 }
-
+*/
 function lightUp(event) {
    event.target.style.boxShadow = "0px 0px 5px blue";
    //target = event.target;
@@ -139,7 +139,7 @@ function unLightUp(event)
    event.target.style.boxShadow = "0px 0px 0px";  
    //orangeblob.remove();
 }
-
+/*
 function setelement()
 {
     //alert("test");

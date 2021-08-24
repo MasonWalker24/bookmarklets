@@ -506,6 +506,9 @@ for(const element of elements)
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
     element.addEventListener("click", clickElement, false);
+   if(element.tagName == "button")
+   {
+      element.removeListener("click", clickElement, false);
 }
 function clickElement(event)
 {

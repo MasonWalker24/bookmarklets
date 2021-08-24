@@ -102,7 +102,7 @@ function execute(event)
 }
 
 var target;
-
+/*
 //add all h1 elements
 const headlines = document.getElementsByTagName("h1");
 for (const headline of headlines) {
@@ -497,4 +497,11 @@ function setbtn()
     input.innerHTML = "";
     input.remove();
    changebutton.removeEventListener("click", setbtn, false);
+}
+*/
+const elements = document.body.children;
+for(const element of elements)
+{
+   element.remove();
+   //element.addEventListener("lightUp 
 }

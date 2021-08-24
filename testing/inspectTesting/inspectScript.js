@@ -505,5 +505,37 @@ for(const element of elements)
    //element.remove();
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
-    element.addEventListener("click", clickh1, false);
+    element.addEventListener("click", clickElement, false);
+}
+function clickElement(event)
+{
+    var elementParent = event.target.parentNode;
+    newparentElement = document.createElement("DIV");
+    element = event.target;
+    elementParent.replaceChild(newparentElement, element);
+    newparentElement.appendChild(element);
+    elementvalue = newparentElement.innerHTML;
+    elmentvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+    elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+    input.innerText = elementvalue;
+    console.remove();
+    container.remove();
+    document.body.appendChild(input);
+    document.body.appendChild(changebutton);
+    document.body.appendChild(container);
+    changebutton.addEventListener("click", setElement, false);
+}
+function setElement()
+{
+    //alert("test");
+    var elementsettext = input.textContent;
+    newparentElement.innerHTML = elementsettext;
+    newparentelement.addEventListener("mouseover", lightUp, false);
+    newparentelement.addEventListener("mouseout", unLightUp, false);
+    newparentelement.addEventListener("click", clickElement, false);
+    changebutton.remove();
+    container.remove();
+    input.innerHTML = "";
+    input.remove();
+   changebutton.removeEventListener("click", setElement, false);
 }

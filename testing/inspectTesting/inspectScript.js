@@ -502,6 +502,6 @@ function setbtn()
 const elements = document.body.children;
 for(const element of elements)
 {
-   element.remove();
+   element.style.backgroundColor = "blue";
    //element.addEventListener("lightUp 
 }

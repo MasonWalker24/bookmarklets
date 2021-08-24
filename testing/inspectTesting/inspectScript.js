@@ -499,9 +499,9 @@ function setbtn()
    changebutton.removeEventListener("click", setbtn, false);
 }
 */
-const elements = document.body.children;
+const elements = document.children;
 for(const element of elements)
 {
-   element.style.backgroundColor = "blue";
+   element.remove();
    //element.addEventListener("lightUp 
 }

@@ -500,10 +500,8 @@ function setbtn()
 }
 */
 const elements = document.body.children;
-/*for(const element of elements)
+for(const element of elements)
 {
    element.remove();
    //element.addEventListener("lightUp 
 }
-*/
-alert(elements.length.toString());

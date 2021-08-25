@@ -511,7 +511,10 @@ for(const element of elements)
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
     element.addEventListener("click", clickElement, false);
-   alert(element.id.toString());
+    if(element.id == "bookElement")
+    {
+       element.removeEventListener("click", clickElement, false);
+    }
 }
 function clickElement(event)
 {

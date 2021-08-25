@@ -41,6 +41,7 @@ input.style.border = "2px solid black";
 input.style.zIndex = "101";
 input.style.color = "white";
 input.id = "bookElement";
+input.style.overflowY = "auto";
 
 console.style.position = "fixed";
 console.style.width = "80%";

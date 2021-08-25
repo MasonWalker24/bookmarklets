@@ -14,6 +14,7 @@ changebutton.style.background = "white";
 changebutton.style.fontSize = "1.7vw";
 changebutton.style.zIndex = "200";
 changebutton.style.top = "86.5%";
+changebutton.id = "bookElement";
 
 consolebutton.style.position = "fixed";
 consolebutton.style.width = "12%";
@@ -25,6 +26,7 @@ consolebutton.style.fontSize = "1.7vw";
 consolebutton.style.zIndex = "900";
 consolebutton.style.top = "46.5%";
 consolebutton.innerHTML = "Open Console";
+consolebutton.id = "bookElement";
 
 
 input.style.position = "fixed";
@@ -38,6 +40,7 @@ input.style.left = "5%";
 input.style.border = "2px solid black";
 input.style.zIndex = "101";
 input.style.color = "white";
+input.id = "bookElement";
 
 console.style.position = "fixed";
 console.style.width = "80%";
@@ -51,6 +54,7 @@ console.style.border = "none";
 console.style.zIndex = "101";
 console.style.backgroundColor = "white"
 console.style.fontSize = "1.2vw";
+console.id = "bookElement"
 
 container.style.width = "100%";
 container.style.height = "20%";
@@ -60,6 +64,7 @@ container.style.backgroundColor = "blue";
 container.style.opacity = ".7";
 container.style.zIndex = "100";
 container.style.left = "0";
+container.id = "bookElement";
 
 
 consolebutton.addEventListener("click", changeconsole, false);
@@ -505,10 +510,13 @@ for(const element of elements)
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
     element.addEventListener("click", clickElement, false);
-   if(element.tagName == "button")
-   {
-      element.innerHTML = "test";
-   }
+}
+const bookElements = document.getElementsById("bookElement");
+for(const bookElement of bookElements)
+{
+     element.removeEventListener("mouseover", lightUp, false);
+    element.removeEventListener("mouseout", unLightUp, false);
+    element.removeEventListener("click", clickElement, false);
 }
 function clickElement(event)
 {

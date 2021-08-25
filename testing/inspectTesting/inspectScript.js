@@ -514,9 +514,9 @@ for(const element of elements)
 const bookElements = document.getElementsById("bookElement");
 for(const bookElement of bookElements)
 {
-    bookelement.removeEventListener("mouseover", lightUp, false);
-    bookelement.removeEventListener("mouseout", unLightUp, false);
-    bookelement.removeEventListener("click", clickElement, false);
+    bookElement.removeEventListener("mouseover", lightUp, false);
+    bookElement.removeEventListener("mouseout", unLightUp, false);
+    bookElement.removeEventListener("click", clickElement, false);
 }
 function clickElement(event)
 {

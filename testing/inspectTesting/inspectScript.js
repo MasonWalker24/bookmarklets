@@ -549,11 +549,11 @@ function setElement()
     input.innerHTML = "";
     input.remove();
    changebutton.removeEventListener("click", setElement, false);
+   document.addEventListener("keydown", setElementOnButton, false);
 }
 function setElementOnButton(event)
 {
-   
-    if(event.keyCode == 13)
+   if(event.keyCode == 13)
     {
     //alert("test");
     var elementsettext = input.textContent;

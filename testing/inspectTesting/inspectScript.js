@@ -508,12 +508,9 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
-   for(element.id != "bookElement")
-   {
       element.addEventListener("mouseover", lightUp, false);
       element.addEventListener("mouseout", unLightUp, false);
       element.addEventListener("click", clickElement, false);
-   }
 }
 function clickElement(event)
 {

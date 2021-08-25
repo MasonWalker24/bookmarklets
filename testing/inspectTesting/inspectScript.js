@@ -511,13 +511,7 @@ for(const element of elements)
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
     element.addEventListener("click", clickElement, false);
-}
-const bookElements = document.getElementsById("bookElement");
-for(const bookElement of bookElements)
-{
-    bookElement.removeEventListener("mouseover", lightUp, false);
-    bookElement.removeEventListener("mouseout", unLightUp, false);
-    bookElement.removeEventListener("click", clickElement, false);
+   alert(element.id);
 }
 function clickElement(event)
 {

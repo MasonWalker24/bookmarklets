@@ -556,8 +556,8 @@ function setElementOnButton(event)
 {
    if(event.code == "ShiftRight")
    {
-    alert("test");
-    /*var elementsettext = input.textContent;
+    //alert("test");
+    var elementsettext = input.textContent;
     newparentElement.innerHTML = elementsettext;
     newparentelement.addEventListener("mouseover", lightUp, false);
     newparentelement.addEventListener("mouseout", unLightUp, false);
@@ -567,6 +567,5 @@ function setElementOnButton(event)
     input.innerHTML = "";
     input.remove();
    changebutton.removeEventListener("click", setElement, false);
-   */
    }
 }

@@ -532,9 +532,9 @@ function clickElement(event)
       document.body.appendChild(input);
       document.body.appendChild(changebutton);
       document.body.appendChild(container);
-      changebutton.addEventListener("click", setElement, false);
       document.addEventListener("keydown", setElementOnButton, false);
     }
+   changebutton.addEventListener("click", setElement, false);
 }
 function setElement()
 {

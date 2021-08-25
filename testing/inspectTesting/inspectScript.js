@@ -511,7 +511,7 @@ for(const element of elements)
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
     element.addEventListener("click", clickElement, false);
-   alert(element.id);
+   alert(element.id.toString());
 }
 function clickElement(event)
 {

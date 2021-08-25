@@ -502,13 +502,12 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
-   //element.remove();
     element.addEventListener("mouseover", lightUp, false);
     element.addEventListener("mouseout", unLightUp, false);
     element.addEventListener("click", clickElement, false);
    if(element.tagName == "button")
    {
-      element.removeListener("click", clickElement, false);
+      element.innerHTML = "test";
    }
 }
 function clickElement(event)

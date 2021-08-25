@@ -514,22 +514,25 @@ for(const element of elements)
 }
 function clickElement(event)
 {
-    var elementParent = event.target.parentNode;
-    newparentElement = document.createElement("DIV");
     element = event.target;
-   alert(element.id.toString());
-    elementParent.replaceChild(newparentElement, element);
-    newparentElement.appendChild(element);
-    elementvalue = newparentElement.innerHTML;
-    elmentvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
-    elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
-    input.innerText = elementvalue;
-    console.remove();
-    container.remove();
-    document.body.appendChild(input);
-    document.body.appendChild(changebutton);
-    document.body.appendChild(container);
-    changebutton.addEventListener("click", setElement, false);
+    var bookId = element.id.toString();
+    if(bookId != "bookElement")
+    {
+      var elementParent = event.target.parentNode;
+      newparentElement = document.createElement("DIV");
+      elementParent.replaceChild(newparentElement, element);
+      newparentElement.appendChild(element);
+      elementvalue = newparentElement.innerHTML;
+      elmentvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+      elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
+      input.innerText = elementvalue;
+      console.remove();
+      container.remove();
+      document.body.appendChild(input);
+      document.body.appendChild(changebutton);
+      document.body.appendChild(container);
+      changebutton.addEventListener("click", setElement, false);
+    }
 }
 function setElement()
 {

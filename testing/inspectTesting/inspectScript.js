@@ -517,6 +517,7 @@ function clickElement(event)
     var elementParent = event.target.parentNode;
     newparentElement = document.createElement("DIV");
     element = event.target;
+   alert(element.id.toString());
     elementParent.replaceChild(newparentElement, element);
     newparentElement.appendChild(element);
     elementvalue = newparentElement.innerHTML;

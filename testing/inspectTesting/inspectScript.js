@@ -42,6 +42,7 @@ input.style.zIndex = "101";
 input.style.color = "white";
 input.id = "bookElement";
 input.style.overflowY = "auto";
+input.style.backgroundColor = "gray";
 
 console.style.position = "fixed";
 console.style.width = "80%";
@@ -56,7 +57,7 @@ console.style.zIndex = "101";
 console.style.backgroundColor = "white"
 console.style.fontSize = "1.2vw";
 console.id = "bookElement"
-
+/*
 container.style.width = "100%";
 container.style.height = "20%";
 container.style.position = "fixed";
@@ -66,7 +67,7 @@ container.style.opacity = ".7";
 container.style.zIndex = "100";
 container.style.left = "0";
 container.id = "bookElement";
-
+*/
 
 consolebutton.addEventListener("click", changeconsole, false);
 document.body.appendChild(consolebutton);

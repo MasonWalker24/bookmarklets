@@ -549,23 +549,5 @@ function setElement()
     input.innerHTML = "";
     input.remove();
    changebutton.removeEventListener("click", setElement, false);
-   document.addEventListener("keydown", setElementOnButton, false);
-}
-function setElementOnButton(event)
-{
-   if(event.keyCode == 13)
-    {
-    //alert("test");
-    var elementsettext = input.textContent;
-    newparentElement.innerHTML = elementsettext;
-    newparentelement.addEventListener("mouseover", lightUp, false);
-    newparentelement.addEventListener("mouseout", unLightUp, false);
-    newparentelement.addEventListener("click", clickElement, false);
-    changebutton.remove();
-    container.remove();
-    input.innerHTML = "";
-    input.remove();
-    changebutton.removeEventListener("click", setElement, false);
-    }
 }
 

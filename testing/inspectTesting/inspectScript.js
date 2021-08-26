@@ -517,7 +517,7 @@ for(const element of elements)
 function clickElement(event)
 {
     element = event.target;
-    var bookId = element.id.toString();
+    var bookId = element.id;
     if(bookId != "bookElement")
     {
       var elementParent = event.target.parentNode;
@@ -534,14 +534,11 @@ function clickElement(event)
       document.body.appendChild(changebutton);
       document.body.appendChild(container);
        alert(changebutton.id);
-      //changebutton.addEventListener("click", setElement, false);
-       document.addEventListener("keydown", setElement, false);
+      changebutton.addEventListener("click", setElement, false);
     }
 }
 function setElement(event)
 {
-   if(event.keycode == 13)
-   {
     //alert("test");
     var elementsettext = input.textContent;
     newparentElement.innerHTML = elementsettext;
@@ -552,7 +549,5 @@ function setElement(event)
     container.remove();
     input.innerHTML = "";
     input.remove();
-   //changebutton.removeEventListener("click", setElement, false);
-      document.addRemoveEventListener("keydown", setElement, false);
-   }
+    changebutton.removeEventListener("click", setElement, false);
 }

@@ -10,6 +10,7 @@ addButton.style.height = "7.5%";
 addButton.style.position = "absolute";
 addButton.style.left = "94%";
 addButton.style.top = "92.5%";
+addButton.style.backgroundColor = "blue";
 document.appendChild(addButton);
 
 

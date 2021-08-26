@@ -510,17 +510,20 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
-      //var bookId = element.id;
+      var bookId = element.id;
+      if(bookId != "bookElement")
+      {
       element.addEventListener("mouseover", lightUp, false);
       element.addEventListener("mouseout", unLightUp, false);
       element.addEventListener("click", clickElement, false);
+      }
 }
 function clickElement(event)
 {
     var target = event.target;
-    var bookId = target.id;
-    if(bookId != "bookElement")
-    {
+    //var bookId = target.id;
+    //if(bookId != "bookElement")
+    //{
       var elementParent = event.target.parentNode;
       var newparentElement = document.createElement("DIV");
       elementParent.replaceChild(newparentElement, target);
@@ -535,7 +538,7 @@ function clickElement(event)
       document.body.appendChild(changebutton);
       document.body.appendChild(container);
       changebutton.addEventListener("click", setElement, false);
-    }
+    //}
 }
 function setElement(event)
 {

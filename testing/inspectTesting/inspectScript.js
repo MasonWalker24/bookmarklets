@@ -510,22 +510,23 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
+      //var bookId = element.id;
       element.addEventListener("mouseover", lightUp, false);
       element.addEventListener("mouseout", unLightUp, false);
       element.addEventListener("click", clickElement, false);
 }
 function clickElement(event)
 {
-    element = event.target;
-    var bookId = element.id;
+    var target = event.target;
+    var bookId = target.id;
     if(bookId != "bookElement")
     {
       var elementParent = event.target.parentNode;
-      newparentElement = document.createElement("DIV");
-      elementParent.replaceChild(newparentElement, element);
-      newparentElement.appendChild(element);
-      elementvalue = newparentElement.innerHTML;
-      elmentvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
+      var newparentElement = document.createElement("DIV");
+      elementParent.replaceChild(newparentElement, target);
+      newparentElement.appendChild(target);
+      var elementvalue = newparentElement.innerHTML;
+      elementvalue = elementvalue.replace(/ style="box-shadow: blue 0px 0px 5px;"/gi, "");
       elementvalue = elementvalue.replace(/box-shadow: blue 0px 0px 5px;/gi, "");
       input.innerText = elementvalue;
       console.remove();
@@ -533,7 +534,6 @@ function clickElement(event)
       document.body.appendChild(input);
       document.body.appendChild(changebutton);
       document.body.appendChild(container);
-       alert(changebutton.id);
       changebutton.addEventListener("click", setElement, false);
     }
 }

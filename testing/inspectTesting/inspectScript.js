@@ -121,6 +121,10 @@ for (const headline of headlines) {
 */
 function lightUp(event) {
    event.target.style.boxShadow = "0px 0px 5px blue";
+   if(event.target.id != "bookElement")
+   {
+      element.addEventListener("click", clickElement, false);
+   }
    //target = event.target;
    //var rect = target.getBoundingClientRect();
    //var width = rect.width + 5;
@@ -510,13 +514,8 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
-      var bookId = element.id;
-      if(bookId != "bookElement")
-      {
-      element.addEventListener("mouseover", lightUp, false);
-      element.addEventListener("mouseout", unLightUp, false);
-      element.addEventListener("click", clickElement, false);
-      }
+   element.addEventListener("mouseover", lightUp, false);
+   element.addEventListener("mouseout", unLightUp, false);
 }
 function clickElement(event)
 {

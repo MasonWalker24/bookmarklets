@@ -15,6 +15,7 @@ changebutton.style.fontSize = "1.7vw";
 changebutton.style.zIndex = "200";
 changebutton.style.top = "86.5%";
 changebutton.id = "bookElement";
+changebutton.addEventListener("click", setElement, false);
 
 consolebutton.style.position = "fixed";
 consolebutton.style.width = "12%";

@@ -1,5 +1,5 @@
 var changebutton = document.createElement("BUTTON");
-var container = document.createElement("DIV");
+//var container = document.createElement("DIV");
 var input = document.createElement("H2");
 var consolebutton = document.createElement("BUTTON");
 var console = document.createElement("H2");
@@ -15,7 +15,6 @@ changebutton.style.fontSize = "1.7vw";
 changebutton.style.zIndex = "200";
 changebutton.style.top = "86.5%";
 changebutton.id = "bookElement";
-changebutton.addEventListener("click", setElement, false);
 
 consolebutton.style.position = "fixed";
 consolebutton.style.width = "12%";
@@ -537,7 +536,6 @@ function clickElement(event)
       container.remove();
       document.body.appendChild(input);
       document.body.appendChild(changebutton);
-      document.body.appendChild(container);
       changebutton.addEventListener("click", setElement, false);
     //}
 }

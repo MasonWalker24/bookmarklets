@@ -120,10 +120,11 @@ for (const headline of headlines) {
 }
 */
 function lightUp(event) {
-   event.target.style.boxShadow = "0px 0px 5px blue";
-   if(event.target.id != "bookElement")
+   var object = event.target;
+   if(object.id != "bookElement")
    {
-      element.addEventListener("click", clickElement, false);
+      object.addEventListener("click", clickElement, false);
+      event.target.style.boxShadow = "0px 0px 5px blue";
    }
    //target = event.target;
    //var rect = target.getBoundingClientRect();

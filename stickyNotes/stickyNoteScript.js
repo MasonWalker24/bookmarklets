@@ -11,7 +11,7 @@ note.style.width = "100%";
 note.style.height = "312%";
 note.style.border = "2px solid black";
 note.style.position = "absolute";
-note.appendChild(note);
+dragHeader.appendChild(note);
 
 //styling the header
 

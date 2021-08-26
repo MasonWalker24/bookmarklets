@@ -10,9 +10,9 @@ document.addEventListener("keydown", addNote, false);
 
 function addNote(event)
 {
-  if(event.keycode == 13)
-  {
+  //if(event.keycode == 13)
+  //{
     //document.appendChild(draggableObject);
     alert("test");
-  }
+  //}
 }

@@ -10,8 +10,9 @@ document.addEventListener("keydown", addNote, false);
 
 function addNote(event)
 {
-  if(event.code == "ShiftRight")
+  if(event.keycode == 13)
   {
-    document.appendChild(draggableObject);
+    //document.appendChild(draggableObject);
+    alert("test");
   }
 }

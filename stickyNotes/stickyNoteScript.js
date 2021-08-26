@@ -14,9 +14,12 @@ addButton.style.top = "92.5%";
 addButton.style.backgroundColor = "blue";
 document.body.appendChild(addButton);
 
-addButton.addEventListener("click", addNote, false);
+document.addEventListener("keydown", addNote, false);
 
 function addNote(event)
 {
+    if(event.code == "ShiftRight")
+    {
         document.body.appendChild(draggableObject);
+    }
 }

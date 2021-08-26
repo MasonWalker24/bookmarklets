@@ -15,8 +15,8 @@ dragHeader.appendChild(note);
 
 //styling the header
 
-dragHeader.style.width = "8%";
-dragHeader.style.height = "2%";
+dragHeader.style.width = "10%";
+dragHeader.style.height = "15%";
 
 
 // adding the sticky note

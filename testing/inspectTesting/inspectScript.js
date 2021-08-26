@@ -78,7 +78,7 @@ function changeconsole()
 {
    if(isConsole == false)
    {
-      document.addEventListener("keydown", execute, false);
+      document.addRemoveEventListener("keydown", execute, false);
       document.body.appendChild(console);
       document.body.appendChild(container);
       consolebutton.innerHTML = "Close Console";
@@ -86,6 +86,7 @@ function changeconsole()
    }
    else
    {
+      document.addEventListener("keydown", execute, false);
       console.innerHTML = "";
       console.remove();
       container.remove();
@@ -533,12 +534,14 @@ function clickElement(event)
       document.body.appendChild(changebutton);
       document.body.appendChild(container);
        alert(changebutton.id);
-      changebutton.addEventListener("click", setElement, false);
+      //changebutton.addEventListener("click", setElement, false);
+       document.addEventListener("keydown", setElement, false);
     }
 }
-function setElement()
+function setElement(event)
 {
-   
+   if(event.keycode == 13)
+   {
     //alert("test");
     var elementsettext = input.textContent;
     newparentElement.innerHTML = elementsettext;
@@ -549,5 +552,7 @@ function setElement()
     container.remove();
     input.innerHTML = "";
     input.remove();
-   changebutton.removeEventListener("click", setElement, false);
+   //changebutton.removeEventListener("click", setElement, false);
+      document.addRemoveEventListener("keydown", setElement, false);
+   }
 }

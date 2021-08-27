@@ -7,8 +7,8 @@ const dragHeader = document.createElement("DIV");
 //styling the main sticky
 
 note.style.backgroundColor = "yellow";
-note.style.width = "8%";
-note.style.height = "12%";
+note.style.width = "100%";
+note.style.height = "100%";
 note.style.border = "2px solid black";
 note.style.position = "absolute";
 dragHeader.appendChild(note);

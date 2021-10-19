@@ -26,7 +26,7 @@ consolebutton.style.fontSize = "1.7vw";
 consolebutton.style.zIndex = "900";
 consolebutton.style.top = "46.5%";
 consolebutton.innerHTML = "Open Console";
-consolebutton.id = "bookElement";
+consolebutton.id = "consoleButton";
 
 
 input.style.position = "fixed";
@@ -125,7 +125,10 @@ function lightUp(event) {
    {
       object.addEventListener("click", clickElement, false);
       event.target.style.boxShadow = "0px 0px 5px blue";
-   }
+   } else if(object.id == "consoleButton")
+     {
+        object.addEventListener("click", changeconsole, false);
+     }
    //target = event.target;
    //var rect = target.getBoundingClientRect();
    //var width = rect.width + 5;

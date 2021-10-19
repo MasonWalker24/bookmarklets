@@ -515,7 +515,7 @@ function setbtn()
 const elements = document.children;
 for(const element of elements)
 {
-   if(element.id != "consolebutton")
+   if(element.id == "consolebutton")
    {
       element.addEventListener("mouseover", lightUp, false);
       element.addEventListener("mouseout", unLightUp, false);

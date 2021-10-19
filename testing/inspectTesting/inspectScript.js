@@ -121,7 +121,7 @@ for (const headline of headlines) {
 */
 function lightUp(event) {
    var object = event.target;
-   if(object.id != "bookElement")
+   if(object.id != "bookElement" || object.id != "consolebutton")
    {
       object.addEventListener("click", clickElement, false);
       event.target.style.boxShadow = "0px 0px 5px blue";

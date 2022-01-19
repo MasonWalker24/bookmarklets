@@ -1,7 +1,7 @@
 javascript:
 var delay = prompt("delay(milliseconds)");
-var elementToClick;
-var elements = document.body.children;
+const elementToClick;
+const elements = document.body.children;
 for(const element of elements)
 {
   element.addEventListener("click", setclick, false);
